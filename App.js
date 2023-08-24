@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import About from "./src/components/About";
+import Error from "./src/components/Error";
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
 /***
  * layout 
@@ -31,7 +32,9 @@ const Applayout = () =>{
 const appRouter = createBrowserRouter([
     {
     path : "/",
-    element :<Applayout/>
+    element :<Applayout/>,
+    errorElement:<Error/>
+
     },
     {
     path:"/about",
