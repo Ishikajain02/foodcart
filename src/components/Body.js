@@ -58,11 +58,11 @@ const Body =() =>{
         
         </div>
     <div className="restaurant-list">
-   
+  
     {filterrestaurants.map((restaurant) =>{
       
       return <RestaurantCard key ={restaurant?.info?.id} {...restaurant?.info}/> ;
-      
+    
     })}
   </div>
     </>
