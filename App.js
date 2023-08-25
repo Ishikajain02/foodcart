@@ -1,10 +1,14 @@
-import React from "react";
+import React, { Children } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import About from "./src/components/About";
 import Error from "./src/components/Error";
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import Contact from "./src/components/Contact";
+import RestaurantMenu from "./src/components/RestaurantMenu";
+
 /***
  * layout 
  *  header 
@@ -24,7 +28,7 @@ const Applayout = () =>{
     return(
     <>
      <Header />
-     <Body/>
+     <Outlet/>
      </>
     
     )    
@@ -33,13 +37,39 @@ const appRouter = createBrowserRouter([
     {
     path : "/",
     element :<Applayout/>,
-    errorElement:<Error/>
+    errorElement:<Error/>,
+    children :[{
+        
+            path:"/about",
+            element:<About/>
+            
 
+    },{
+      path:"/contact",
+      element:<Contact/>
     },
-    {
-    path:"/about",
-    element:<About/>
+{
+
+    path:"/",
+    element:<Body/>
+},
+{
+
+    path:"/restaurant/:id",
+    element:<RestaurantMenu/>,
+}
+
+]
+        
+
     }
 ])
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter}/>);
+/*
+things to improve 
+*after rendering diff component header disappear
+* to fix not find restaurant
+* to improve shimmer
+*to improve error page
+*/

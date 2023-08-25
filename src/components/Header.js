@@ -1,5 +1,5 @@
  import {useState} from 'react';
-  
+ import { Link } from 'react-router-dom';  
  const Tittle = () =>{
    
     return(
@@ -22,7 +22,8 @@ const Header = () =>{
     <div className = "nav-items">
    <ul >
     <li>Home</li>
-    <li>About Us</li>
+    {/*<li><a href ="/about">About Us</a></li>*/}
+    <li>    <Link to ="/about">About Us</Link></li>
     <li>Cart</li>
     <li>Contact Us</li>
    </ul>
