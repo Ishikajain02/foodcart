@@ -5,10 +5,10 @@ import Body from "./src/components/Body";
 import About from "./src/components/About";
 import Error from "./src/components/Error";
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
-import {Outlet} from "react-router-dom";
+import {Outlet, Switch} from "react-router-dom";
 import Contact from "./src/components/Contact";
 import RestaurantMenu from "./src/components/RestaurantMenu";
-
+import Footer from "./src/components/Footer";
 /***
  * layout 
  *  header 
@@ -29,6 +29,7 @@ const Applayout = () =>{
     <>
      <Header />
      <Outlet/>
+     <Footer/>
      </>
     
     )    
@@ -54,9 +55,10 @@ const appRouter = createBrowserRouter([
     element:<Body/>
 },
 {
-
-    path:"/restaurant/:id",
+     
+    path:"/restaurants/:id",
     element:<RestaurantMenu/>,
+
 }
 
 ]
@@ -72,4 +74,6 @@ things to improve
 * to fix not find restaurant
 * to improve shimmer
 *to improve error page
+* change routing
+
 */

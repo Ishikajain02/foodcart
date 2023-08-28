@@ -21,11 +21,11 @@ const Header = () =>{
     <Tittle />
     <div className = "nav-items">
    <ul >
-    <li>Home</li>
+    <li><Link to="/">Home</Link></li>
     {/*<li><a href ="/about">About Us</a></li>*/}
     <li>    <Link to ="/about">About Us</Link></li>
-    <li>Cart</li>
-    <li>Contact Us</li>
+    <li><Link to="/cart">Cart</Link></li>
+    <li> <Link to ="/contact">Contact Us</Link></li>
    </ul>
     {(IsLoggedIn) ? <button onClick={()=> setIsLoggedIn(false)}>Login</button> : <button onClick={()=> setIsLoggedIn(true)}>Logout</button>}
     </div>
