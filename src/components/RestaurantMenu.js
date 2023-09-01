@@ -37,10 +37,15 @@ const RestaurantMenu =()=>{
         <>
         
         <h1>Restaurant id : {id}</h1>
-      {/*  <h2>{restaurant.areaName}</h2>
-        <h2>{restaurant.locality}</h2>
-        <h2>{restaurant.name}</h2>
-    <h3>{restaurant.avgRating}</h3>*/}
+        <h2>{name}</h2>
+        <h2>{cuisines.join()}</h2>
+        <h2>{costForTwoMessage}</h2>
+          {itemCards.map((item)=>{
+               
+               return<ul>
+               <h3>{item.card.info.name}</h3>
+               </ul>
+          })}
         </>
     )
 }

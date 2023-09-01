@@ -33883,17 +33883,55 @@ const RestaurantMenu = ()=>{
     console.log(itemCards);
     //  console.log(name);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: [
-                "Restaurant id : ",
-                id
-            ]
-        }, void 0, true, {
-            fileName: "src/components/RestaurantMenu.js",
-            lineNumber: 39,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Restaurant id : ",
+                    id
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 39,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 40,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: cuisines.join()
+            }, void 0, false, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 41,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: costForTwoMessage
+            }, void 0, false, {
+                fileName: "src/components/RestaurantMenu.js",
+                lineNumber: 42,
+                columnNumber: 9
+            }, undefined),
+            itemCards.map((item)=>{
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: item.card.info.name
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantMenu.js",
+                        lineNumber: 46,
+                        columnNumber: 16
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/RestaurantMenu.js",
+                    lineNumber: 45,
+                    columnNumber: 22
+                }, undefined);
+            })
+        ]
+    }, void 0, true);
 };
 _s(RestaurantMenu, "GyWlocUXijWTFb6u0T5wYqqp5EI=", false, function() {
     return [
