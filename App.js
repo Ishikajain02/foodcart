@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { Children, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
@@ -9,6 +9,10 @@ import {Outlet, Switch} from "react-router-dom";
 import Contact from "./src/components/Contact";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import Footer from "./src/components/Footer";
+import {lazy,Suspense} from 'react';
+import Shimmer from "./src/components/Shimmer";
+//import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
+const Instamart = lazy(()=>import ("./src/components/Instamart"));
 /***
  * layout 
  *  header 
@@ -59,6 +63,9 @@ const appRouter = createBrowserRouter([
     path:"/restaurants/:id",
     element:<RestaurantMenu/>,
 
+},{
+    path:"/instamart",
+    element:<Suspense fallback= {<Shimmer/>}><Instamart/></Suspense>
 }
 
 ]

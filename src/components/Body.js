@@ -2,7 +2,7 @@ import React, { useState , useEffect } from "react";
 import * as RestaurantList from "../utils/data";
 import RestaurantCard  from "./RestaurantCard";
 import {url} from "../utils/constant";
-
+import useOnline from "../utils/useOnline";
 import {Link} from 'react-router-dom';
 import Shimmer from "./Shimmer";
 function filterData(searchText,restaurants){
@@ -36,6 +36,10 @@ const Body =() =>{
     setallRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setfilterRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
+ // const offline = useOnline(false);
+ const offline = useOnline();
+ if(!offline)
+ return <h1>I am offline</h1>
   if(!allrestaurants) return null;
   //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
     return (allrestaurants.length ===0)? <Shimmer/> :(

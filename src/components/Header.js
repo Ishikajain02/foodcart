@@ -1,5 +1,6 @@
  import {useState} from 'react';
  import { Link } from 'react-router-dom';  
+ 
  const Tittle = () =>{
    
     return(
@@ -26,6 +27,7 @@ const Header = () =>{
     <li>    <Link to ="/about">About Us</Link></li>
     <li><Link to="/cart">Cart</Link></li>
     <li> <Link to ="/contact">Contact Us</Link></li>
+    <li><Link to ="/instamart">Instamart</Link></li>
    </ul>
     {(IsLoggedIn) ? <button onClick={()=> setIsLoggedIn(false)}>Login</button> : <button onClick={()=> setIsLoggedIn(true)}>Logout</button>}
     </div>
