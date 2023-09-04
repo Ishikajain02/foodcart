@@ -2967,6 +2967,8 @@ var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
 const Instamart = /*#__PURE__*/ (0, _react.lazy)(()=>require("2b18584f3f4b1290"));
 _c = Instamart;
+const Trying = /*#__PURE__*/ (0, _react.lazy)(()=>require("25ac71adb8478359"));
+_c1 = Trying;
 /***
  * layout 
  *  header 
@@ -2986,34 +2988,34 @@ _c = Instamart;
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 6
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 6
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 6
             }, undefined)
         ]
     }, void 0, true);
 };
-_c1 = Applayout;
+_c2 = Applayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 44,
+            lineNumber: 45,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3021,7 +3023,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3029,7 +3031,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3037,7 +3039,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3045,7 +3047,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3055,12 +3057,26 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Instamart, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 68,
+                        lineNumber: 69,
                         columnNumber: 46
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 68,
+                    lineNumber: 69,
+                    columnNumber: 13
+                }, undefined)
+            },
+            {
+                path: "/trying",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Trying, {}, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 72,
+                        columnNumber: 23
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 72,
                     columnNumber: 13
                 }, undefined)
             }
@@ -3072,7 +3088,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 77,
+    lineNumber: 81,
     columnNumber: 13
 }, undefined)); /*
 things to improve 
@@ -3083,16 +3099,17 @@ things to improve
 * change routing
 
 */ 
-var _c, _c1;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "Instamart");
-$RefreshReg$(_c1, "Applayout");
+$RefreshReg$(_c1, "Trying");
+$RefreshReg$(_c2, "Applayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","./src/components/About":"9R1Eu","./src/components/Error":"kvula","react-router-dom":"9xmpe","./src/components/Contact":"cgAOG","./src/components/RestaurantMenu":"8PuJ6","./src/components/Footer":"8pPOA","2b18584f3f4b1290":"45sdZ","./src/components/Shimmer":"g6ZGj"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","./src/components/About":"9R1Eu","./src/components/Error":"kvula","react-router-dom":"9xmpe","./src/components/Contact":"cgAOG","./src/components/RestaurantMenu":"8PuJ6","./src/components/Footer":"8pPOA","2b18584f3f4b1290":"45sdZ","./src/components/Shimmer":"g6ZGj","25ac71adb8478359":"9jO7B"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27564,6 +27581,20 @@ const Header = ()=>{
                                 fileName: "src/components/Header.js",
                                 lineNumber: 30,
                                 columnNumber: 5
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/trying",
+                                    children: "Try"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 31,
+                                    columnNumber: 9
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 31,
+                                columnNumber: 5
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -27576,14 +27607,14 @@ const Header = ()=>{
                         children: "Login"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 21
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>setIsLoggedIn(true),
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 32,
+                        lineNumber: 33,
                         columnNumber: 82
                     }, undefined)
                 ]
@@ -34227,6 +34258,12 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
+},{}],"9jO7B":[function(require,module,exports) {
+module.exports = require("73b0e4f98720e220")(require("4d59bf52767c9634").getBundleURL("lly8x") + "Trying.b0061df7.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("akejt"));
+
+},{"73b0e4f98720e220":"61B45","4d59bf52767c9634":"lgJ39"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
 
 //# sourceMappingURL=index.7826abd7.js.map
