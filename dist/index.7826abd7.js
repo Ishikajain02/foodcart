@@ -27478,7 +27478,7 @@ var _s = $RefreshSig$();
 const Tittle = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "logo",
+            className: "h-28 p-2",
             alt: "text",
             src: "https://assets.materialup.com/uploads/578c1723-1046-4fb9-b068-10715210d08d/preview.jpg"
         }, void 0, false, {
@@ -27494,7 +27494,7 @@ const Header = ()=>{
     console.log("hi from header");
     const [IsLoggedIn, setIsLoggedIn] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Tittle, {}, void 0, false, {
                 fileName: "src/components/Header.js",
@@ -27502,18 +27502,20 @@ const Header = ()=>{
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
+                className: "px-2 flex py-5 justify-between",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        className: "flex py-10 px-2 ",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/",
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 25,
-                                    columnNumber: 9
+                                    columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27521,6 +27523,7 @@ const Header = ()=>{
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: [
                                     "    ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27529,7 +27532,7 @@ const Header = ()=>{
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
                                         lineNumber: 27,
-                                        columnNumber: 13
+                                        columnNumber: 30
                                     }, undefined)
                                 ]
                             }, void 0, true, {
@@ -27538,13 +27541,14 @@ const Header = ()=>{
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/cart",
                                     children: "Cart"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 28,
-                                    columnNumber: 9
+                                    columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27552,6 +27556,7 @@ const Header = ()=>{
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: [
                                     " ",
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -27560,7 +27565,7 @@ const Header = ()=>{
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
                                         lineNumber: 29,
-                                        columnNumber: 10
+                                        columnNumber: 27
                                     }, undefined)
                                 ]
                             }, void 0, true, {
@@ -27569,13 +27574,14 @@ const Header = ()=>{
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/instamart",
                                     children: "Instamart"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 30,
-                                    columnNumber: 9
+                                    columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27583,13 +27589,14 @@ const Header = ()=>{
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                className: "px-4",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                     to: "/trying",
                                     children: "Try"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
                                     lineNumber: 31,
-                                    columnNumber: 9
+                                    columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
@@ -27642,7 +27649,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.15.0
  *
@@ -33576,6 +33583,14 @@ const Body = ()=>{
         columnNumber: 42
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "font-bold",
+                children: "Hellluuu"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "search",
                 children: [

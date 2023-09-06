@@ -44,7 +44,7 @@ const Body =() =>{
   //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
     return (allrestaurants.length ===0)? <Shimmer/> :(
     <>
-      
+      <h1 className='font-bold'>Hellluuu</h1>
         <div className="search">
         <input type="text" placeholder ="Search" value = {searchText} 
          onKeyDown={(e) => {
