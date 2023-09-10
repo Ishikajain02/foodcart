@@ -12,7 +12,7 @@ import Footer from "./src/components/Footer";
 import {lazy,Suspense} from 'react';
 import Shimmer from "./src/components/Shimmer";
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
-const Instamart = lazy(()=>import ("./src/components/Instamart"));
+const SwiggyMart = lazy(() =>import ("./src/components/SwiggyMart"));
 const Trying = lazy(()=> import("./src/components/Trying"));
 /***
  * layout 
@@ -65,8 +65,8 @@ const appRouter = createBrowserRouter([
     element:<RestaurantMenu/>,
 
 },{
-    path:"/instamart",
-    element:<Suspense fallback= {<Shimmer/>}><Instamart/></Suspense>
+    path:"/swiggymart",
+    element:<Suspense fallback= {<Shimmer/>}><SwiggyMart/></Suspense>
 },{
     path:"/trying",
     element:<Suspense><Trying/></Suspense>

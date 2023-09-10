@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"gzT0l":[function(require,module,exports) {
+})({"4iHE8":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "e12554bb0762395e";
+module.bundle.HMR_BUNDLE_ID = "b9707eae1b041ee1";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -594,35 +594,37 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"gB4Fs":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8238 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"kZdPi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$031f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8238.prelude(module);
+$parcel$ReactRefreshHelpers$031f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const InstaFast = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "This is instamart"
-    }, void 0, false, {
-        fileName: "src/components/Instamart.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
+const SwiggyMart = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Heyyy !! Swiggy here"
+        }, void 0, false, {
+            fileName: "src/components/SwiggyMart.js",
+            lineNumber: 4,
+            columnNumber: 3
+        }, undefined)
+    }, void 0, false);
 };
-_c = InstaFast;
-exports.default = InstaFast;
+_c = SwiggyMart;
+exports.default = SwiggyMart;
 var _c;
-$RefreshReg$(_c, "InstaFast");
+$RefreshReg$(_c, "SwiggyMart");
 
-  $parcel$ReactRefreshHelpers$8238.postlude(module);
+  $parcel$ReactRefreshHelpers$031f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gzT0l","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
 
-//# sourceMappingURL=Instamart.0762395e.js.map
+//# sourceMappingURL=SwiggyMart.1b041ee1.js.map

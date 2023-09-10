@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"gzT0l":[function(require,module,exports) {
+})({"4lzjQ":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "e12554bb0762395e";
+module.bundle.HMR_BUNDLE_ID = "9a06ff0111fd31f0";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -594,11 +594,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"gB4Fs":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8238 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6d18d6bd340e7473":"786KC","74ad5ea14201648c":"1dldy"}],"64yzd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3932 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8238.prelude(module);
+$parcel$ReactRefreshHelpers$3932.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -608,7 +608,7 @@ const InstaFast = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "This is instamart"
     }, void 0, false, {
-        fileName: "src/components/Instamart.js",
+        fileName: "src/components/InstaFast.js",
         lineNumber: 3,
         columnNumber: 9
     }, undefined);
@@ -618,11 +618,11 @@ exports.default = InstaFast;
 var _c;
 $RefreshReg$(_c, "InstaFast");
 
-  $parcel$ReactRefreshHelpers$8238.postlude(module);
+  $parcel$ReactRefreshHelpers$3932.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gzT0l","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4lzjQ","1xC6H"], null, "parcelRequire8dbe")
 
-//# sourceMappingURL=Instamart.0762395e.js.map
+//# sourceMappingURL=InstaFast.11fd31f0.js.map
