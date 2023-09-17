@@ -44,9 +44,9 @@ const Body =() =>{
   //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
     return (allrestaurants.length ===0)? <Shimmer/> :(
     <>
-      <h1 className='font-bold'>Hellluuu</h1>
-        <div className="search">
-        <input type="text" placeholder ="Search" value = {searchText} 
+      
+        <div className="search content-center">
+        <input className ="bg-neutral-200 px-4 m-8 ml-25"type="text" placeholder ="Search" value = {searchText} 
          onKeyDown={(e) => {
           if (e.key === 'Enter') {
             const data = filterData(searchText, allrestaurants);
@@ -57,22 +57,22 @@ const Body =() =>{
         
         onChange={(e) => setSearchText(e.target.value)} ></input>
         
-        <button  className = "btn" type ="button" onClick={()=>{
+        <button  className = "btn bg-orange-500 m-0 px-4" type ="button" onClick={()=>{
           const data = filterData(searchText,allrestaurants);
           setfilterRestaurants(data);
         }} > Submit</button>
         
         </div>
-    <div className="restaurant-list">
+    <div className=" restaurant-list flex px-3 space-x-3.5 flex-wrap">
   
     {filterrestaurants.map((restaurant) =>{
       
       return <Link    key={restaurant.info.id}
-      to={"/restaurants/" + restaurant.info.id}>  <RestaurantCard key ={restaurant?.info?.id} {...restaurant?.info}/> ;
+      to={"/restaurants/" + restaurant.info.id}>  <RestaurantCard key ={restaurant?.info?.id} {...restaurant?.info}/> 
      </Link>
     })}
   </div>
     </>
-    );
+    )
 };
 export default Body;

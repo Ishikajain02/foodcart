@@ -19,7 +19,7 @@ const Header = () =>{
     <div className ="flex ">
     
     <Tittle />
-    <div className = "px-2 flex py-5  items-center">
+    <div className = "px-2 flex py-5  items-center bg-orange-500 w-full h-28">
    <ul className="flex py-10 px-2 items-center">
     <li className="px-4"><Link to="/">Home</Link></li>
     {/*<li><a href ="/about">About Us</a></li>*/}

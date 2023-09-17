@@ -27502,7 +27502,7 @@ const Header = ()=>{
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "px-2 flex py-5  items-center",
+                className: "px-2 flex py-5  items-center bg-orange-500 w-full h-28",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                         className: "flex py-10 px-2 items-center",
@@ -33583,18 +33583,11 @@ const Body = ()=>{
         columnNumber: 42
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "font-bold",
-                children: "Hellluuu"
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 47,
-                columnNumber: 7
-            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
+                className: "search content-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "bg-neutral-200 px-4 m-8 ml-25",
                         type: "text",
                         placeholder: "Search",
                         value: searchText,
@@ -33611,7 +33604,7 @@ const Body = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "btn",
+                        className: "btn bg-orange-500 m-0 px-4",
                         type: "button",
                         onClick: ()=>{
                             const data = filterData(searchText, allrestaurants);
@@ -33630,7 +33623,7 @@ const Body = ()=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "restaurant-list",
+                className: " restaurant-list flex px-3 space-x-3.5 flex-wrap",
                 children: filterrestaurants.map((restaurant)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/restaurants/" + restaurant.info.id,
@@ -33642,8 +33635,7 @@ const Body = ()=>{
                                 fileName: "src/components/Body.js",
                                 lineNumber: 71,
                                 columnNumber: 51
-                            }, undefined),
-                            " ;"
+                            }, undefined)
                         ]
                     }, restaurant.info.id, true, {
                         fileName: "src/components/Body.js",
@@ -33686,7 +33678,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRatingString, lastMileTravel, costForTwo })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "h-280 w-52 border-solid border-black ",
+        className: "card ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId

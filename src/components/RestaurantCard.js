@@ -9,7 +9,7 @@ const RestaurantCard = ({
 }) =>{
     
     return(
-        <div className="h-280 w-52 border-solid border-black ">
+        <div className="card ">
         <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
          <h2>{name}</h2>
          <h4>{cuisines}</h4>

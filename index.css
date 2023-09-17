@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*how to add both tailwind and norml css*/
+
+.card{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+.card > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card > span{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.card > span > h4{
+    text-align: center;
+}
+
+.card > span > h4:first-child{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding: 0 5px 0;
+    color: white;
+}
+
+.card > span > h4:first-child .fa-star{
+    font-size: small;
+    padding: 0 5px 3px 0;
+}
+
+
+.restaurant-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-shimmer{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    height:200px;  
+    
+}
