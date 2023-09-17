@@ -15,7 +15,8 @@ const RestaurantCard = ({
          <h4>{cuisines}</h4>
          <h4>{areaName}</h4>
          <span>
-         <h4><i class="fa-solid fa-star"></i>{avgRatingString}</h4>
+         <h4 style={{ backgroundColor: avgRatingString >= 4.2 ? "green" : "red" }}>
+          <i class="fa-solid fa-star"></i>{avgRatingString}</h4>
            <h4>{lastMileTravel}</h4>
        <h4>{costForTwo}</h4>
          </span>

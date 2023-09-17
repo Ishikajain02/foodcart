@@ -33711,13 +33711,16 @@ const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRating
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                        style: {
+                            backgroundColor: avgRatingString >= 4.2 ? "green" : "red"
+                        },
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                                 class: "fa-solid fa-star"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantCard.js",
-                                lineNumber: 18,
-                                columnNumber: 14
+                                lineNumber: 19,
+                                columnNumber: 11
                             }, undefined),
                             avgRatingString
                         ]
@@ -33730,14 +33733,14 @@ const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRating
                         children: lastMileTravel
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 12
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: costForTwo
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 20,
+                        lineNumber: 21,
                         columnNumber: 8
                     }, undefined)
                 ]
