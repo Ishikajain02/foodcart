@@ -607,9 +607,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
-const Section = ({ heading, paragraph })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(true);
+const Section = ({ heading, paragraph, isVisible, setIsVisible })=>{
+    //const[isVisible ,setIsVisible] = useState(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "border-2 border-black",
@@ -622,13 +621,13 @@ const Section = ({ heading, paragraph })=>{
                     lineNumber: 8,
                     columnNumber: 9
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: paragraph
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
                     lineNumber: 9,
-                    columnNumber: 9
-                }, undefined),
+                    columnNumber: 23
+                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false),
                 isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     onClick: ()=>setIsVisible(false),
                     children: "Hide"
@@ -637,7 +636,7 @@ const Section = ({ heading, paragraph })=>{
                     lineNumber: 11,
                     columnNumber: 14
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>setIsVisible(false),
+                    onClick: ()=>setIsVisible(true),
                     children: "show"
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
@@ -652,46 +651,75 @@ const Section = ({ heading, paragraph })=>{
         }, undefined)
     }, void 0, false);
 };
-_s(Section, "d+2jqjNvj6teQDEjLVQXX8d65y4=");
 _c = Section;
 const SwiggyMart = ()=>{
-    // const [isVisible , setIsVisible] = useState(true);
+    _s();
+    const [sectionConfig, setsectionConfig] = (0, _react.useState)({
+        showabout: false,
+        showcareer: false,
+        showlocate: false
+    });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Hiii"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 heading: "About us",
+                isVisible: sectionConfig.showabout,
+                setIsVisible: ()=>{
+                    setsectionConfig({
+                        showabout: true,
+                        showcareer: false,
+                        showlocate: false
+                    });
+                },
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 24,
+                lineNumber: 28,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 heading: "Career",
+                isVisible: sectionConfig.showcareer,
+                setIsVisible: ()=>{
+                    setsectionConfig({
+                        showabout: false,
+                        showcareer: true,
+                        showlocate: false
+                    });
+                },
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 25,
+                lineNumber: 33,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
                 heading: "locate Us",
+                isVisible: sectionConfig.showlocate,
+                setIsVisible: ()=>{
+                    setsectionConfig({
+                        showabout: false,
+                        showcareer: false,
+                        showlocate: true
+                    });
+                },
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 26,
+                lineNumber: 38,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
+_s(SwiggyMart, "ANrFpQAS8CCJ2GjSXl1i4sMZRz0=");
 _c1 = SwiggyMart;
 exports.default = SwiggyMart;
 var _c, _c1;
