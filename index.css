@@ -1,7 +1,10 @@
-@tailwind base;
+/*@tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*how to add both tailwind and norml css*/
+how to add both tailwind and norml css*/
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .card{
     width: 250px;

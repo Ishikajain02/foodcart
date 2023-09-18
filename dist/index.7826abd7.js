@@ -33879,6 +33879,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "font-bold text-2xl",
             children: "HII I am about us"
         }, void 0, false, {
             fileName: "src/components/About.js",

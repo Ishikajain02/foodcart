@@ -604,27 +604,105 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const SwiggyMart = ()=>{
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Section = ({ heading, paragraph })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Heyyy !! Swiggy here"
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "border-2 border-black",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "font-bold",
+                    children: heading
+                }, void 0, false, {
+                    fileName: "src/components/SwiggyMart.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: paragraph
+                }, void 0, false, {
+                    fileName: "src/components/SwiggyMart.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>setIsVisible(false),
+                    children: "Hide"
+                }, void 0, false, {
+                    fileName: "src/components/SwiggyMart.js",
+                    lineNumber: 11,
+                    columnNumber: 14
+                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    onClick: ()=>setIsVisible(false),
+                    children: "show"
+                }, void 0, false, {
+                    fileName: "src/components/SwiggyMart.js",
+                    lineNumber: 12,
+                    columnNumber: 31
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/components/SwiggyMart.js",
-            lineNumber: 4,
-            columnNumber: 3
+            lineNumber: 7,
+            columnNumber: 9
         }, undefined)
     }, void 0, false);
 };
-_c = SwiggyMart;
+_s(Section, "d+2jqjNvj6teQDEjLVQXX8d65y4=");
+_c = Section;
+const SwiggyMart = ()=>{
+    // const [isVisible , setIsVisible] = useState(true);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Hiii"
+            }, void 0, false, {
+                fileName: "src/components/SwiggyMart.js",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                heading: "About us",
+                paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
+            }, void 0, false, {
+                fileName: "src/components/SwiggyMart.js",
+                lineNumber: 24,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                heading: "Career",
+                paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
+            }, void 0, false, {
+                fileName: "src/components/SwiggyMart.js",
+                lineNumber: 25,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                heading: "locate Us",
+                paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
+            }, void 0, false, {
+                fileName: "src/components/SwiggyMart.js",
+                lineNumber: 26,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c1 = SwiggyMart;
 exports.default = SwiggyMart;
-var _c;
-$RefreshReg$(_c, "SwiggyMart");
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "SwiggyMart");
 
   $parcel$ReactRefreshHelpers$031f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
 
 //# sourceMappingURL=SwiggyMart.1b041ee1.js.map
