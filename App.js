@@ -1,4 +1,4 @@
-import React, { Children, Suspense , useState,useContext } from "react";
+import React, { Children, Suspense , useState,useContext,useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
@@ -34,15 +34,23 @@ const Applayout = () =>{
     name: "Ishika",
     gmail:"abc@gmail"
    })
-
+  // useEffect(() => {
+    // Make an API call and send username and password
+    //const data = {
+      //name: "Akshay Saini",
+    //};
+    //setuser(data.name);
+  //}, )
     console.log("hiee")
     return(
     <>
-     <UserContext.Provider value ={user}>
+     
+     <UserContext.Provider value ={{user:user,setuser:setuser}}>
      <Header />
      <Outlet/>
      <Footer/>
      </UserContext.Provider>
+   
      </>
     
     )    

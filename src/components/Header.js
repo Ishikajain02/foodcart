@@ -13,7 +13,7 @@ import {UserContext} from '../utils/UserContext';
 }
 const Header = () =>{
     
-    const {name,gmail} = useContext(UserContext);
+    const {user,setuser} = useContext(UserContext);
    // console.log(user);
     console.log("hi from header")
     const[IsLoggedIn,setIsLoggedIn] = useState(true);
@@ -34,7 +34,7 @@ const Header = () =>{
     
    </ul>
     {(IsLoggedIn) ? <button onClick={()=> setIsLoggedIn(false)}>Login</button> : <button onClick={()=> setIsLoggedIn(true)}>Logout</button>}
-    <input className = "px-4"type ="text" value={name} onChange={ (e) => console.log( e.target.value) }></input>
+    <input className = "px-4"type ="text" value={user.name} onChange={ (e) => setuser( {name:e.target.value ,gmail:"helloooneww"}) }></input>
     </div>
     </div>
     )

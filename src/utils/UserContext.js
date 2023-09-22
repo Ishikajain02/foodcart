@@ -1,9 +1,10 @@
 import {createContext} from 'react';
 export const UserContext = createContext(
     {
-        user:{
+        user : {
         name:"Name",
-        gmail:"huuA"
+        gmail:"huuA",
+        
     }}
 );
 

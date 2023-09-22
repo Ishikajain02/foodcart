@@ -2990,30 +2990,40 @@ _c1 = Trying;
         name: "Ishika",
         gmail: "abc@gmail"
     });
+    // useEffect(() => {
+    // Make an API call and send username and password
+    //const data = {
+    //name: "Akshay Saini",
+    //};
+    //setuser(data.name);
+    //}, )
     console.log("hiee");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserContext).Provider, {
-            value: user,
+            value: {
+                user: user,
+                setuser: setuser
+            },
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 42,
+                    lineNumber: 49,
                     columnNumber: 6
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 43,
+                    lineNumber: 50,
                     columnNumber: 6
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 44,
+                    lineNumber: 51,
                     columnNumber: 6
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "App.js",
-            lineNumber: 41,
+            lineNumber: 48,
             columnNumber: 6
         }, undefined)
     }, void 0, false);
@@ -3025,12 +3035,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 53,
+            lineNumber: 61,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 54,
+            lineNumber: 62,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3040,7 +3050,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     name: "Ishuika"
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 58,
+                    lineNumber: 66,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3048,7 +3058,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 63,
+                    lineNumber: 71,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3056,7 +3066,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 68,
+                    lineNumber: 76,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3064,7 +3074,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 73,
+                    lineNumber: 81,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3074,12 +3084,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SwiggyMart, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 77,
+                        lineNumber: 85,
                         columnNumber: 46
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 77,
+                    lineNumber: 85,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3088,12 +3098,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Trying, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 80,
+                        lineNumber: 88,
                         columnNumber: 23
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 80,
+                    lineNumber: 88,
                     columnNumber: 13
                 }, undefined)
             }
@@ -3105,7 +3115,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 89,
+    lineNumber: 97,
     columnNumber: 13
 }, undefined)); /*
 things to improve 
@@ -27509,7 +27519,7 @@ const Tittle = ()=>{
 _c = Tittle;
 const Header = ()=>{
     _s();
-    const { name, gmail } = (0, _react.useContext)((0, _userContext.UserContext));
+    const { user, setuser } = (0, _react.useContext)((0, _userContext.UserContext));
     // console.log(user);
     console.log("hi from header");
     const [IsLoggedIn, setIsLoggedIn] = (0, _react.useState)(true);
@@ -27647,8 +27657,11 @@ const Header = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         className: "px-4",
                         type: "text",
-                        value: name,
-                        onChange: (e)=>console.log(e.target.value)
+                        value: user.name,
+                        onChange: (e)=>setuser({
+                                name: e.target.value,
+                                gmail: "helloooneww"
+                            })
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 37,
@@ -27667,7 +27680,7 @@ const Header = ()=>{
         columnNumber: 5
     }, undefined);
 };
-_s(Header, "dI5ej6eeAWRwmBdhqo9hMq+87pU=");
+_s(Header, "p+8vydol1aiCVljDZoYzioCmVe4=");
 _c1 = Header;
 exports.default = Header;
 var _c, _c1;
@@ -34201,15 +34214,39 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _userContext = require("../utils/UserContext");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Footer"
-    }, void 0, false, {
-        fileName: "src/components/Footer.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
+    _s();
+    const { user } = (0, _react.useContext)((0, _userContext.UserContext));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Footer"
+            }, void 0, false, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: user.name
+            }, void 0, false, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: user.gmail
+            }, void 0, false, {
+                fileName: "src/components/Footer.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
 };
+_s(Footer, "JGtbL9nF23m+KDtp3kj55mw9GTc=");
 _c = Footer;
 exports.default = Footer;
 var _c;
@@ -34220,7 +34257,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9jO7B":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserContext":"c5vgB","react":"21dqq"}],"9jO7B":[function(require,module,exports) {
 module.exports = require("73b0e4f98720e220")(require("4d59bf52767c9634").getBundleURL("lly8x") + "Trying.b0061df7.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
