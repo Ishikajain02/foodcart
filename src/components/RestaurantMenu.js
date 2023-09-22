@@ -3,9 +3,16 @@ import { useState , useEffect } from "react";
 import {MENU_API} from "../utils/constant";
 import Shimmer from "./Shimmer";
 import useRestaurants from "../utils/useRestaurants";
+import { addItem } from "../utils/cartSlice";
+
+import { useDispatch } from "react-redux";
 const RestaurantMenu =()=>{
  const {id } = useParams();
  const resInfo = useRestaurants(id);
+ const dispatch = useDispatch();
+ const handlechange =()=>{
+  dispatch(addItem("pineapple"));
+ }
  //const [resInfo , setresInfo] =useState(null);
   //  const id = params.id;
    // const name = params.name;
@@ -34,6 +41,9 @@ const RestaurantMenu =()=>{
         <h2>{cuisines.join()}</h2>
         <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
         <h2>{costForTwoMessage}</h2>
+        <button className="p-2 m-2 bg-green-400 " onClick={()=>{
+          handlechange()
+        }}>Add Item</button>
           {itemCards.map((item)=>{
                
                return<ul>
