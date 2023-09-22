@@ -1,4 +1,4 @@
-import React, { Children, Suspense } from "react";
+import React, { Children, Suspense , useState,useContext } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
@@ -11,6 +11,7 @@ import RestaurantMenu from "./src/components/RestaurantMenu";
 import Footer from "./src/components/Footer";
 import {lazy,Suspense} from 'react';
 import Shimmer from "./src/components/Shimmer";
+import {UserContext} from "./src/utils/UserContext";
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
 const SwiggyMart = lazy(() =>import ("./src/components/SwiggyMart"));
 const Trying = lazy(()=> import("./src/components/Trying"));
@@ -29,12 +30,19 @@ const Trying = lazy(()=> import("./src/components/Trying"));
  * 
  */
 const Applayout = () =>{
+   const[user,setuser] = useState({
+    name: "Ishika",
+    gmail:"abc@gmail"
+   })
+
     console.log("hiee")
     return(
     <>
+     <UserContext.Provider value ={user}>
      <Header />
      <Outlet/>
      <Footer/>
+     </UserContext.Provider>
      </>
     
     )    
@@ -47,7 +55,7 @@ const appRouter = createBrowserRouter([
     children :[{
         
             path:"/about",
-            element:<About/>
+            element:<About name="Ishuika" />
             
 
     },{
