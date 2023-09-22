@@ -12,6 +12,8 @@ import Footer from "./src/components/Footer";
 import {lazy,Suspense} from 'react';
 import Shimmer from "./src/components/Shimmer";
 import {UserContext} from "./src/utils/UserContext";
+import { Provider } from "react-redux";
+import store from "./src/utils/store";
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
 const SwiggyMart = lazy(() =>import ("./src/components/SwiggyMart"));
 const Trying = lazy(()=> import("./src/components/Trying"));
@@ -44,13 +46,13 @@ const Applayout = () =>{
     console.log("hiee")
     return(
     <>
-     
+     <Provider store ={store}>
      <UserContext.Provider value ={{user:user,setuser:setuser}}>
      <Header />
      <Outlet/>
      <Footer/>
      </UserContext.Provider>
-   
+     </Provider>
      </>
     
     )    
