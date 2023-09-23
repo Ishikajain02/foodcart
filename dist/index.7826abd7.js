@@ -3014,28 +3014,28 @@ _c1 = Trying;
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 6
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 6
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 6
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 6
             }, undefined)
         }, void 0, false, {
             fileName: "App.js",
-            lineNumber: 50,
+            lineNumber: 51,
             columnNumber: 6
         }, undefined)
     }, void 0, false);
@@ -3047,12 +3047,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 64,
+            lineNumber: 67,
             columnNumber: 14
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 65,
+            lineNumber: 68,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3062,7 +3062,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     name: "Ishuika"
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 69,
+                    lineNumber: 72,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3070,7 +3070,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 74,
+                    lineNumber: 77,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3078,7 +3078,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 79,
+                    lineNumber: 82,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3086,7 +3086,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:id",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 84,
+                    lineNumber: 87,
                     columnNumber: 13
                 }, undefined)
             },
@@ -3096,22 +3096,8 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SwiggyMart, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 88,
-                        columnNumber: 46
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 88,
-                    columnNumber: 13
-                }, undefined)
-            },
-            {
-                path: "/trying",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Trying, {}, void 0, false, {
-                        fileName: "App.js",
                         lineNumber: 91,
-                        columnNumber: 23
+                        columnNumber: 46
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
@@ -3120,10 +3106,24 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 }, undefined)
             },
             {
+                path: "/trying",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Trying, {}, void 0, false, {
+                        fileName: "App.js",
+                        lineNumber: 94,
+                        columnNumber: 23
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 94,
+                    columnNumber: 13
+                }, undefined)
+            },
+            {
                 path: "/cart",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 94,
+                    lineNumber: 97,
                     columnNumber: 13
                 }, undefined)
             }
@@ -3135,7 +3135,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 103,
+    lineNumber: 106,
     columnNumber: 13
 }, undefined)); /*
 things to improve 
@@ -35433,18 +35433,39 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRedux = require("react-redux");
+var _foodItem = require("./FoodItem");
+var _foodItemDefault = parcelHelpers.interopDefault(_foodItem);
+var _s = $RefreshSig$();
 const Cart = ()=>{
+    _s();
+    const carditems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
+    // console.log(carditems);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            className: "text-3xl font-bold",
-            children: "Cart"
-        }, void 0, false, {
-            fileName: "src/components/Cart.js",
-            lineNumber: 4,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-3xl font-bold",
+                children: "Cart"
+            }, void 0, false, {
+                fileName: "src/components/Cart.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, undefined),
+            carditems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodItemDefault.default), {
+                    ...item.item.card.info
+                }, item.item.card.info.id, false, {
+                    fileName: "src/components/Cart.js",
+                    lineNumber: 9,
+                    columnNumber: 30
+                }, undefined))
+        ]
+    }, void 0, true);
 };
+_s(Cart, "enHNa91U6A2AZHvpv3+UmTu/w1Q=", false, function() {
+    return [
+        (0, _reactRedux.useSelector)
+    ];
+});
 _c = Cart;
 exports.default = Cart;
 var _c;
@@ -35455,7 +35476,83 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-redux":"bdVon","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./FoodItem":"9xltm"}],"9xltm":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8f2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8f2a.prelude(module);
+
+try {
+//import { UseSelector, useSelector } from "react-redux";
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const FoodItem = ({ name, cuisines, areaName, imageId, price, description })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "card ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: name
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 18,
+                    columnNumber: 10
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: cuisines
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 19,
+                    columnNumber: 10
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: areaName
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 20,
+                    columnNumber: 10
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    children: description
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 21,
+                    columnNumber: 10
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: price / 100
+                }, void 0, false, {
+                    fileName: "src/components/FoodItem.js",
+                    lineNumber: 22,
+                    columnNumber: 10
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/FoodItem.js",
+            lineNumber: 16,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
+};
+_c = FoodItem;
+exports.default = FoodItem;
+var _c;
+$RefreshReg$(_c, "FoodItem");
+
+  $parcel$ReactRefreshHelpers$8f2a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36129,7 +36226,7 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../utils/constant":"6mqGZ","./Shimmer":"g6ZGj","../utils/useRestaurants":"3Dvwz","../utils/cartSlice":"5RXlr","react-redux":"bdVon","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3Dvwz":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj","../utils/useRestaurants":"3Dvwz","../utils/cartSlice":"5RXlr","react-redux":"bdVon"}],"3Dvwz":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d0be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36174,11 +36271,7 @@ var _toolkit = require("@reduxjs/toolkit");
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
-        items: [
-            "apples",
-            "modaks",
-            "panjiri"
-        ]
+        items: []
     },
     reducers: {
         addItem: (state, action)=>{
@@ -40244,6 +40337,6 @@ const store = (0, _toolkit.configureStore)({
 });
 exports.default = store;
 
-},{"@reduxjs/toolkit":"lL1Ef","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./cartSlice":"5RXlr"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
+},{"@reduxjs/toolkit":"lL1Ef","./cartSlice":"5RXlr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
 
 //# sourceMappingURL=index.7826abd7.js.map

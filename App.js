@@ -12,7 +12,7 @@ import Footer from "./src/components/Footer";
 import {lazy,Suspense} from 'react';
 import Shimmer from "./src/components/Shimmer";
 import {UserContext} from "./src/utils/UserContext";
-import { Provider } from "react-redux";
+import { Provider ,useSelector} from "react-redux";
 import store from "./src/utils/store";
 import Cart from "./src/components/Cart"
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
@@ -45,6 +45,7 @@ const Applayout = () =>{
     //setuser(data.name);
   //}, )
     console.log("hiee")
+   
     return(
     <>
      <Provider store ={store}>
@@ -58,7 +59,9 @@ const Applayout = () =>{
     
     )    
 }
-const appRouter = createBrowserRouter([
+const appRouter = createBrowserRouter(
+    
+    [
     {
     path : "/",
     element :<Applayout/>,
