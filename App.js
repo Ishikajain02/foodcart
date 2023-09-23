@@ -14,6 +14,7 @@ import Shimmer from "./src/components/Shimmer";
 import {UserContext} from "./src/utils/UserContext";
 import { Provider } from "react-redux";
 import store from "./src/utils/store";
+import Cart from "./src/components/Cart"
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
 const SwiggyMart = lazy(() =>import ("./src/components/SwiggyMart"));
 const Trying = lazy(()=> import("./src/components/Trying"));
@@ -88,6 +89,9 @@ const appRouter = createBrowserRouter([
 },{
     path:"/trying",
     element:<Suspense><Trying/></Suspense>
+},{
+    path:"/cart",
+    element:<Cart/>
 }
 
 ]

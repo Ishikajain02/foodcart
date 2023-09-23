@@ -1,7 +1,8 @@
 import {useState,useContext} from 'react';
 import { Link } from 'react-router-dom';  
 import {UserContext} from '../utils/UserContext';
-import { UseSelector, useSelector } from 'react-redux';
+import {  useSelector } from 'react-redux';
+import Cart from './Cart';
  const Tittle = () =>{
    
     return(
@@ -18,6 +19,7 @@ const Header = () =>{
    // console.log(user);
    const cardItems = useSelector((store)=>store.cart.items);
     console.log("hi from header")
+    console.log(cardItems);
     const[IsLoggedIn,setIsLoggedIn] = useState(true);
     return(
     
