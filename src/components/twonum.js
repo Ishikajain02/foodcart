@@ -1,0 +1,1 @@
+export const twonum =(a,b)=>a+b;

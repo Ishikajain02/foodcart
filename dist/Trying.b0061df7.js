@@ -601,19 +601,25 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$b463.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Trying);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Trying;
+var _react = _interopRequireDefault(require("2dc778d21935d005"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 function Trying() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: "Trying"
     }, void 0, false, {
         fileName: "src/components/Trying.js",
-        lineNumber: 5,
-        columnNumber: 5
+        lineNumber: 10,
+        columnNumber: 10
     }, this);
 }
 _c = Trying;
@@ -625,6 +631,6 @@ $RefreshReg$(_c, "Trying");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["liKET","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","2dc778d21935d005":"21dqq"}]},["liKET","1xC6H"], null, "parcelRequire8dbe")
 
 //# sourceMappingURL=Trying.b0061df7.js.map

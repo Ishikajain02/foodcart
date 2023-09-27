@@ -601,12 +601,39 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$031f.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("f283001fe48afbec"));
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
 const Section = ({ heading, paragraph, isVisible, setIsVisible })=>{
     //const[isVisible ,setIsVisible] = useState(true);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -618,42 +645,41 @@ const Section = ({ heading, paragraph, isVisible, setIsVisible })=>{
                     children: heading
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
-                    lineNumber: 8,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, undefined),
                 isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: paragraph
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
-                    lineNumber: 9,
-                    columnNumber: 23
+                    lineNumber: 20,
+                    columnNumber: 22
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {}, void 0, false),
                 isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     onClick: ()=>setIsVisible(false),
                     children: "Hide"
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
-                    lineNumber: 11,
-                    columnNumber: 14
+                    lineNumber: 21,
+                    columnNumber: 21
                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                     onClick: ()=>setIsVisible(true),
                     children: "show"
                 }, void 0, false, {
                     fileName: "src/components/SwiggyMart.js",
-                    lineNumber: 12,
-                    columnNumber: 31
+                    lineNumber: 21,
+                    columnNumber: 81
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/SwiggyMart.js",
-            lineNumber: 7,
+            lineNumber: 18,
             columnNumber: 9
         }, undefined)
     }, void 0, false);
 };
 _c = Section;
 const SwiggyMart = ()=>{
-    _s();
     const [sectionConfig, setsectionConfig] = (0, _react.useState)({
         showabout: false,
         showcareer: false,
@@ -665,7 +691,7 @@ const SwiggyMart = ()=>{
                 children: "Hiii"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 27,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
@@ -681,7 +707,7 @@ const SwiggyMart = ()=>{
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 28,
+                lineNumber: 34,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
@@ -697,7 +723,7 @@ const SwiggyMart = ()=>{
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 33,
+                lineNumber: 41,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
@@ -713,15 +739,14 @@ const SwiggyMart = ()=>{
                 paragraph: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)"
             }, void 0, false, {
                 fileName: "src/components/SwiggyMart.js",
-                lineNumber: 38,
+                lineNumber: 48,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(SwiggyMart, "ANrFpQAS8CCJ2GjSXl1i4sMZRz0=");
 _c1 = SwiggyMart;
-exports.default = SwiggyMart;
+var _default = exports.default = SwiggyMart;
 var _c, _c1;
 $RefreshReg$(_c, "Section");
 $RefreshReg$(_c1, "SwiggyMart");
@@ -731,6 +756,6 @@ $RefreshReg$(_c1, "SwiggyMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","f283001fe48afbec":"21dqq"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
 
 //# sourceMappingURL=SwiggyMart.1b041ee1.js.map

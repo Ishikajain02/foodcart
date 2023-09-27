@@ -2941,40 +2941,62 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$c1db.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _client = require("react-dom/client");
-var _clientDefault = parcelHelpers.interopDefault(_client);
-var _header = require("./src/components/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
-var _body = require("./src/components/Body");
-var _bodyDefault = parcelHelpers.interopDefault(_body);
-var _about = require("./src/components/About");
-var _aboutDefault = parcelHelpers.interopDefault(_about);
-var _error = require("./src/components/Error");
-var _errorDefault = parcelHelpers.interopDefault(_error);
-var _reactRouterDom = require("react-router-dom");
-var _contact = require("./src/components/Contact");
-var _contactDefault = parcelHelpers.interopDefault(_contact);
-var _restaurantMenu = require("./src/components/RestaurantMenu");
-var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
-var _footer = require("./src/components/Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _shimmer = require("./src/components/Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _userContext = require("./src/utils/UserContext");
-var _reactRedux = require("react-redux");
-var _store = require("./src/utils/store");
-var _storeDefault = parcelHelpers.interopDefault(_store);
-var _cart = require("./src/components/Cart");
-var _cartDefault = parcelHelpers.interopDefault(_cart);
-var _s = $RefreshSig$();
+"use strict";
+var _react = _interopRequireWildcard(require("86e06cfbc65fbc12"));
+var _client = _interopRequireDefault(require("b22212f3a1d9a8e"));
+var _Header = _interopRequireDefault(require("9e0fd7e83de340b4"));
+var _Body = _interopRequireDefault(require("4a112376decf5d59"));
+var _About = _interopRequireDefault(require("fc61dd727b37f86f"));
+var _Error = _interopRequireDefault(require("847f3bf1e38e9540"));
+var _reactRouterDom = require("bbaebfbc117d7edf");
+var _Contact = _interopRequireDefault(require("20d91333b81df3cc"));
+var _RestaurantMenu = _interopRequireDefault(require("8f8af04ce7d4325"));
+var _Footer = _interopRequireDefault(require("c3bfa4cdb2fe855c"));
+var _Shimmer = _interopRequireDefault(require("45984c3356827b95"));
+var _UserContext = require("3902ada1f0d9bcca");
+var _reactRedux = require("ebe96ef94ef6d2cf");
+var _store = _interopRequireDefault(require("4bb8c5c55cb24d20"));
+var _Cart = _interopRequireDefault(require("81ac408b19ee9ca5"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
 //import InstaMart from "./src/components/InstaMart"; Do not import like this use lazy loadig/dynamic loading
-const SwiggyMart = /*#__PURE__*/ (0, _react.lazy)(()=>require("5f92646ac0e948f3"));
+const SwiggyMart = (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("5f92646ac0e948f3");
+    }).then((res)=>_interopRequireWildcard(res)));
 _c = SwiggyMart;
-const Trying = /*#__PURE__*/ (0, _react.lazy)(()=>require("25ac71adb8478359"));
+const Trying = (0, _react.lazy)(()=>Promise.resolve().then(function() {
+        return require("25ac71adb8478359");
+    }).then((res)=>_interopRequireWildcard(res)));
 _c1 = Trying;
 /***
  * layout 
@@ -2990,7 +3012,6 @@ _c1 = Trying;
  * copywrite 
  * 
  */ const Applayout = ()=>{
-    _s();
     const [user, setuser] = (0, _react.useState)({
         name: "Ishika",
         gmail: "abc@gmail"
@@ -3004,138 +3025,137 @@ _c1 = Trying;
     //}, )
     console.log("hiee");
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRedux.Provider), {
-            store: (0, _storeDefault.default),
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserContext).Provider, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRedux.Provider, {
+            store: _store.default,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_UserContext.UserContext.Provider, {
                 value: {
                     user: user,
                     setuser: setuser
                 },
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Header.default, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 53,
+                        lineNumber: 57,
                         columnNumber: 6
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Outlet, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 54,
+                        lineNumber: 58,
                         columnNumber: 6
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Footer.default, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 55,
+                        lineNumber: 59,
                         columnNumber: 6
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 6
             }, undefined)
         }, void 0, false, {
             fileName: "App.js",
-            lineNumber: 51,
+            lineNumber: 52,
             columnNumber: 6
         }, undefined)
     }, void 0, false);
 };
-_s(Applayout, "4F1XY6nFu0hCtUOre+wBdd7ji8M=");
 _c2 = Applayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 67,
-            columnNumber: 14
+            lineNumber: 66,
+            columnNumber: 12
         }, undefined),
-        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Error.default, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 68,
-            columnNumber: 18
+            lineNumber: 67,
+            columnNumber: 17
         }, undefined),
         children: [
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_About.default, {
                     name: "Ishuika"
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 72,
-                    columnNumber: 21
+                    lineNumber: 70,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/contact",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Contact.default, {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 77,
-                    columnNumber: 15
+                    lineNumber: 73,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Body.default, {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 82,
-                    columnNumber: 13
+                    lineNumber: 76,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/restaurants/:id",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_RestaurantMenu.default, {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 87,
-                    columnNumber: 13
+                    lineNumber: 79,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/swiggymart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
-                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, void 0, void 0),
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_react.Suspense, {
+                    fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Shimmer.default, {}, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(SwiggyMart, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 91,
-                        columnNumber: 46
+                        lineNumber: 82,
+                        columnNumber: 63
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 91,
-                    columnNumber: 13
+                    lineNumber: 82,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/trying",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_react.Suspense, {
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Trying, {}, void 0, false, {
                         fileName: "App.js",
-                        lineNumber: 94,
-                        columnNumber: 23
+                        lineNumber: 85,
+                        columnNumber: 31
                     }, undefined)
                 }, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 94,
-                    columnNumber: 13
+                    lineNumber: 85,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/cart",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cartDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Cart.default, {}, void 0, false, {
                     fileName: "App.js",
-                    lineNumber: 97,
-                    columnNumber: 13
+                    lineNumber: 88,
+                    columnNumber: 14
                 }, undefined)
             }
         ]
     }
 ]);
-const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterProvider), {
+const root = _client.default.createRoot(document.getElementById("root"));
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.RouterProvider, {
     router: appRouter
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 106,
+    lineNumber: 92,
     columnNumber: 13
 }, undefined)); /*
 things to improve 
@@ -3156,7 +3176,7 @@ $RefreshReg$(_c2, "Applayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","./src/components/About":"9R1Eu","./src/components/Error":"kvula","react-router-dom":"9xmpe","./src/components/Contact":"cgAOG","./src/components/RestaurantMenu":"8PuJ6","./src/components/Footer":"8pPOA","./src/components/Shimmer":"g6ZGj","25ac71adb8478359":"9jO7B","5f92646ac0e948f3":"60fKT","./src/utils/UserContext":"c5vgB","react-redux":"bdVon","./src/utils/store":"k2jPV","./src/components/Cart":"h8J3U"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","25ac71adb8478359":"9jO7B","5f92646ac0e948f3":"60fKT","86e06cfbc65fbc12":"21dqq","b22212f3a1d9a8e":"lOjBx","9e0fd7e83de340b4":"hsJbF","4a112376decf5d59":"8yaV8","fc61dd727b37f86f":"9R1Eu","847f3bf1e38e9540":"kvula","bbaebfbc117d7edf":"9xmpe","20d91333b81df3cc":"cgAOG","8f8af04ce7d4325":"8PuJ6","c3bfa4cdb2fe855c":"8pPOA","45984c3356827b95":"g6ZGj","3902ada1f0d9bcca":"c5vgB","ebe96ef94ef6d2cf":"bdVon","4bb8c5c55cb24d20":"k2jPV","81ac408b19ee9ca5":"h8J3U"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -5861,7 +5881,254 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"lOjBx":[function(require,module,exports) {
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"9jO7B":[function(require,module,exports) {
+module.exports = require("73b0e4f98720e220")(require("4d59bf52767c9634").getBundleURL("lly8x") + "Trying.b0061df7.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("akejt"));
+
+},{"73b0e4f98720e220":"61B45","4d59bf52767c9634":"lgJ39"}],"61B45":[function(require,module,exports) {
+"use strict";
+var cacheLoader = require("ca2a84f7fa4a3bb0");
+module.exports = cacheLoader(function(bundle) {
+    return new Promise(function(resolve, reject) {
+        // Don't insert the same script twice (e.g. if it was already in the HTML)
+        var existingScripts = document.getElementsByTagName("script");
+        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
+            return script.src === bundle;
+        })) {
+            resolve();
+            return;
+        }
+        var preloadLink = document.createElement("link");
+        preloadLink.href = bundle;
+        preloadLink.rel = "preload";
+        preloadLink.as = "script";
+        document.head.appendChild(preloadLink);
+        var script = document.createElement("script");
+        script.async = true;
+        script.type = "text/javascript";
+        script.src = bundle;
+        script.onerror = function(e) {
+            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
+            script.onerror = script.onload = null;
+            script.remove();
+            reject(error);
+        };
+        script.onload = function() {
+            script.onerror = script.onload = null;
+            resolve();
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    });
+});
+
+},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
+"use strict";
+var cachedBundles = {};
+var cachedPreloads = {};
+var cachedPrefetches = {};
+function getCache(type) {
+    switch(type){
+        case "preload":
+            return cachedPreloads;
+        case "prefetch":
+            return cachedPrefetches;
+        default:
+            return cachedBundles;
+    }
+}
+module.exports = function(loader, type) {
+    return function(bundle) {
+        var cache = getCache(type);
+        if (cache[bundle]) return cache[bundle];
+        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
+            delete cache[bundle];
+            throw e;
+        });
+    };
+};
+
+},{}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"60fKT":[function(require,module,exports) {
+module.exports = require("8eb3d3d2be91ff95")(require("394b1e8497d3a309").getBundleURL("lly8x") + "SwiggyMart.1b041ee1.js" + "?" + Date.now()).catch((err)=>{
+    delete module.bundle.cache[module.id];
+    throw err;
+}).then(()=>module.bundle.root("kZdPi"));
+
+},{"8eb3d3d2be91ff95":"61B45","394b1e8497d3a309":"lgJ39"}],"lOjBx":[function(require,module,exports) {
 "use strict";
 var m = require("aaccff5d309d9239");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -27341,191 +27608,29 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"hsJbF":[function(require,module,exports) {
+},{}],"hsJbF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bfed.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
-var _userContext = require("../utils/UserContext");
-var _reactRedux = require("react-redux");
-var _cart = require("./Cart");
-var _cartDefault = parcelHelpers.interopDefault(_cart);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("b84a635fee103dbd");
+var _reactRouterDom = require("870f7ce973476e08");
+var _UserContext = require("878480bf3aff31ce");
+var _reactRedux = require("eaa7a48a8f1a6fbd");
+var _Cart = _interopRequireDefault(require("97c103e0febac3ee"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const Tittle = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27534,15 +27639,14 @@ const Tittle = ()=>{
             src: "https://assets.materialup.com/uploads/578c1723-1046-4fb9-b068-10715210d08d/preview.jpg"
         }, void 0, false, {
             fileName: "src/components/Header.js",
-            lineNumber: 11,
+            lineNumber: 16,
             columnNumber: 9
         }, undefined)
     }, void 0, false);
 };
 _c = Tittle;
 const Header = ()=>{
-    _s();
-    const { user, setuser } = (0, _react.useContext)((0, _userContext.UserContext));
+    const { user, setuser } = (0, _react.useContext)(_UserContext.UserContext);
     // console.log(user);
     const cardItems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     console.log("hi from header");
@@ -27553,7 +27657,7 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Tittle, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 28,
+                lineNumber: 32,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27564,40 +27668,40 @@ const Header = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                     to: "/",
                                     children: "Home"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 31,
+                                    lineNumber: 35,
                                     columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 31,
+                                lineNumber: 35,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
                                 children: [
                                     "    ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                         to: "/about",
                                         children: "About Us "
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 33,
+                                        lineNumber: 37,
                                         columnNumber: 30
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 33,
+                                lineNumber: 37,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                     to: "/cart",
                                     children: [
                                         "Cart - ",
@@ -27606,66 +27710,66 @@ const Header = ()=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 34,
+                                    lineNumber: 38,
                                     columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 34,
+                                lineNumber: 38,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
                                 children: [
                                     " ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                         to: "/contact",
                                         children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "src/components/Header.js",
-                                        lineNumber: 35,
+                                        lineNumber: 39,
                                         columnNumber: 27
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 35,
+                                lineNumber: 39,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                     to: "/swiggymart",
                                     children: "Instamart"
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 36,
+                                    lineNumber: 40,
                                     columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 36,
+                                lineNumber: 40,
                                 columnNumber: 5
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 className: "px-4",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                                     to: "/trying",
                                     children: "Try "
                                 }, void 0, false, {
                                     fileName: "src/components/Header.js",
-                                    lineNumber: 37,
+                                    lineNumber: 41,
                                     columnNumber: 26
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 37,
+                                lineNumber: 41,
                                 columnNumber: 5
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 30,
+                        lineNumber: 34,
                         columnNumber: 4
                     }, undefined),
                     IsLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27673,15 +27777,15 @@ const Header = ()=>{
                         children: "Login"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 40,
-                        columnNumber: 21
+                        lineNumber: 44,
+                        columnNumber: 19
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>setIsLoggedIn(true),
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 40,
-                        columnNumber: 82
+                        lineNumber: 44,
+                        columnNumber: 81
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                         className: "px-4",
@@ -27693,29 +27797,24 @@ const Header = ()=>{
                             })
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 41,
+                        lineNumber: 45,
                         columnNumber: 5
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 29,
+                lineNumber: 33,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 26,
-        columnNumber: 5
+        lineNumber: 30,
+        columnNumber: 10
     }, undefined);
 };
-_s(Header, "Mbz2TvXdMkjbwLsVV/jZkdZYdA4=", false, function() {
-    return [
-        (0, _reactRedux.useSelector)
-    ];
-});
 _c1 = Header;
-exports.default = Header;
+var _default = exports.default = Header;
 var _c, _c1;
 $RefreshReg$(_c, "Tittle");
 $RefreshReg$(_c1, "Header");
@@ -27725,7 +27824,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-router-dom":"9xmpe","../utils/UserContext":"c5vgB","react-redux":"bdVon","./Cart":"h8J3U"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","b84a635fee103dbd":"21dqq","870f7ce973476e08":"9xmpe","878480bf3aff31ce":"c5vgB","eaa7a48a8f1a6fbd":"bdVon","97c103e0febac3ee":"h8J3U","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.15.0
  *
@@ -33594,18 +33693,50 @@ function getDoneFetcher(data) {
     return fetcher;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"c5vgB":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"c5vgB":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4ca8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$4ca8.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "UserContext", ()=>UserContext);
-var _react = require("react");
-const UserContext = /*#__PURE__*/ (0, _react.createContext)({
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.UserContext = void 0;
+var _react = require("7513bcd591a82e7e");
+const UserContext = exports.UserContext = (0, _react.createContext)({
     user: {
         name: "Name",
         gmail: "huuA"
@@ -33617,7 +33748,7 @@ const UserContext = /*#__PURE__*/ (0, _react.createContext)({
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bdVon":[function(require,module,exports) {
+},{"7513bcd591a82e7e":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bdVon":[function(require,module,exports) {
 // The primary entry point assumes we're working with standard ReactDOM/RN, but
 // older versions that do not include `useSyncExternalStore` (React 16.9 - 17.x).
 // Because of that, the useSyncExternalStore compat shim is needed.
@@ -35430,15 +35561,20 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ad24.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRedux = require("react-redux");
-var _foodItem = require("./FoodItem");
-var _foodItemDefault = parcelHelpers.interopDefault(_foodItem);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRedux = require("cb87a23539be5893");
+var _FoodItem = _interopRequireDefault(require("4c19a214ef5555a3"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const Cart = ()=>{
-    _s();
     const carditems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     // console.log(carditems);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -35448,26 +35584,31 @@ const Cart = ()=>{
                 children: "Cart"
             }, void 0, false, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 8,
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined),
-            carditems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodItemDefault.default), {
+            carditems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_FoodItem.default, {
                     ...item.item.card.info
                 }, item.item.card.info.id, false, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 9,
-                    columnNumber: 30
-                }, undefined))
+                    lineNumber: 15,
+                    columnNumber: 31
+                }, undefined)),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "p-2 m-2 bg-red-400",
+                children: "Clear Cart"
+            }, void 0, false, {
+                fileName: "src/components/Cart.js",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined)
         ]
     }, void 0, true);
 };
-_s(Cart, "enHNa91U6A2AZHvpv3+UmTu/w1Q=", false, function() {
-    return [
-        (0, _reactRedux.useSelector)
-    ];
-});
 _c = Cart;
-exports.default = Cart;
+var _default = exports.default = Cart; /**
+ * add clear cart functionality
+ */ 
 var _c;
 $RefreshReg$(_c, "Cart");
 
@@ -35476,17 +35617,20 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-redux":"bdVon","./FoodItem":"9xltm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xltm":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","cb87a23539be5893":"bdVon","4c19a214ef5555a3":"9xltm","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xltm":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8f2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$8f2a.prelude(module);
 
 try {
-//import { UseSelector, useSelector } from "react-redux";
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+//import { UseSelector, useSelector } from "react-redux";
 const FoodItem = ({ name, cuisines, areaName, imageId, price, description })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35496,54 +35640,54 @@ const FoodItem = ({ name, cuisines, areaName, imageId, price, description })=>{
                     src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + imageId
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 17,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: name
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 18,
+                    lineNumber: 21,
                     columnNumber: 10
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     children: cuisines
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 19,
+                    lineNumber: 22,
                     columnNumber: 10
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     children: areaName
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 20,
+                    lineNumber: 23,
                     columnNumber: 10
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     children: description
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 21,
+                    lineNumber: 24,
                     columnNumber: 10
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                     children: price / 100
                 }, void 0, false, {
                     fileName: "src/components/FoodItem.js",
-                    lineNumber: 22,
+                    lineNumber: 25,
                     columnNumber: 10
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/FoodItem.js",
-            lineNumber: 16,
+            lineNumber: 19,
             columnNumber: 9
         }, undefined)
     }, void 0, false);
 };
 _c = FoodItem;
-exports.default = FoodItem;
+var _default = exports.default = FoodItem;
 var _c;
 $RefreshReg$(_c, "FoodItem");
 
@@ -35552,28 +35696,57 @@ $RefreshReg$(_c, "FoodItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$0606.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _data = require("../utils/data");
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _constant = require("../utils/constant");
-var _useOnline = require("../utils/useOnline");
-var _useOnlineDefault = parcelHelpers.interopDefault(_useOnline);
-var _reactRouterDom = require("react-router-dom");
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("2481c59d75fda5ac"));
+var RestaurantList = _interopRequireWildcard(require("eb9af9d6f4991187"));
+var _RestaurantCard = _interopRequireDefault(require("414d9513f92cc73"));
+var _constant = require("8c09b7d1af900601");
+var _useOnline = _interopRequireDefault(require("c1f819b138cbd8cc"));
+var _reactRouterDom = require("3cae63fbb41e880e");
+var _Shimmer = _interopRequireDefault(require("dfdcad3f5b7c09c1"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
 function filterData(searchText, restaurants) {
     const filterdata = restaurants.filter((restaurant)=>{
         return restaurant.info.name.toLowerCase().includes(searchText.toLowerCase());
@@ -35582,7 +35755,6 @@ function filterData(searchText, restaurants) {
 }
 // const RestaurantList = getu();
 const Body = ()=>{
-    _s();
     //{console.log("hi I m body")};
     const [allrestaurants, setallRestaurants] = (0, _react.useState)([]);
     const [filterrestaurants, setfilterRestaurants] = (0, _react.useState)([]);
@@ -35593,7 +35765,7 @@ const Body = ()=>{
         getrestaurant();
     }, []);
     async function getrestaurant() {
-        const data = await fetch((0, _constant.url));
+        const data = await fetch(_constant.url);
         const data2 = await data.json();
         console.log(data2);
         console.log(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
@@ -35601,20 +35773,20 @@ const Body = ()=>{
         setfilterRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     // const offline = useOnline(false);
-    const offline = (0, _useOnlineDefault.default)();
+    const offline = (0, _useOnline.default)();
     if (!offline) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "I am offline"
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 42,
-        columnNumber: 9
+        lineNumber: 45,
+        columnNumber: 24
     }, undefined);
     if (!allrestaurants) return null;
     //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
-    return allrestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    return allrestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Shimmer.default, {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 45,
-        columnNumber: 42
+        lineNumber: 48,
+        columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35634,7 +35806,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 49,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35647,51 +35819,46 @@ const Body = ()=>{
                         children: " Submit"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 60,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: " restaurant-list flex px-3 space-x-3.5 flex-wrap",
                 children: filterrestaurants.map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactRouterDom.Link, {
                         to: "/restaurants/" + restaurant.info.id,
                         children: [
                             "  ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_RestaurantCard.default, {
                                 ...restaurant?.info
                             }, restaurant?.info?.id, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 71,
-                                columnNumber: 51
+                                lineNumber: 67,
+                                columnNumber: 107
                             }, undefined)
                         ]
                     }, restaurant.info.id, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 70,
-                        columnNumber: 14
+                        lineNumber: 67,
+                        columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 66,
+                lineNumber: 64,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "819zap5sdBj8N/9fXvKIk6uqSpM=", false, function() {
-    return [
-        (0, _useOnlineDefault.default)
-    ];
-});
 _c = Body;
-exports.default = Body;
+var _default = exports.default = Body;
 var _c;
 $RefreshReg$(_c, "Body");
 
@@ -35700,16 +35867,23 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantCard":"bMboU","react":"21dqq","../utils/constant":"6mqGZ","../utils/data":"kGloa","./Shimmer":"g6ZGj","../utils/useOnline":"74Yls","react-router-dom":"9xmpe"}],"bMboU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","2481c59d75fda5ac":"21dqq","eb9af9d6f4991187":"kGloa","414d9513f92cc73":"bMboU","8c09b7d1af900601":"6mqGZ","c1f819b138cbd8cc":"74Yls","3cae63fbb41e880e":"9xmpe","dfdcad3f5b7c09c1":"g6ZGj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kGloa":[function(require,module,exports) {
+"use strict";
+module.exports = JSON.parse('[{"type":"restaurant","info":{"type":"F","id":"60008","name":"Alakapuri","uuid":"c6d3096e-497a-4fce-96a7-da9e925af2c4","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"k2why61tsxk9sh0sl68d","cuisines":["South Indian","Kerala","North Indian"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":5,"slugs":{"restaurant":"alakapuri-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Near Civil Station Road, Kakkanad, Kochi","locality":"Civil Station Road","parentId":20242,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157557~p=1~eid=00000188-d719-9296-01a5-69530010017e~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"60008","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.4","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"553867","name":"Harsh Dhaba","uuid":"c28a6e45-10dc-462c-bf8e-2c9a0443c808","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"qzh1wruc0ifwvy9jbi07","cuisines":["North Indian","South Indian"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"slaString":"29 MINS","lastMileTravel":3,"slugs":{"restaurant":"harsh-dhaba-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"8/965 B THENGODE P O,EDACHIRA,KAKKAAD,THRIKKAKARA CIRCLE,ERNAKULAM KERALA-682030","locality":"Thrikkakara","parentId":333110,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"10% OFF","subHeader":"ABOVE ₹800","discountTag":"FLAT DEAL","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"553867","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.3","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"282413","name":"Veetile Oonu","uuid":"454c3590-ebbb-4167-a8e6-b700f6902597","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"dj7vtgexkqn75gmlvjev","cuisines":["South Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"slaString":"21 MINS","lastMileTravel":4,"slugs":{"restaurant":"veetile-oonu-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"IX / 817, Chakkalakkal Moolayil, Rajagiri valley kakkanad , Ernakulam, KOCHI CIRCLE, Kochi - 682001","locality":"Chakkalakkal Moolayil","parentId":222003,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"282413","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"lastMileTravel":4,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.9","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"101001","name":"Aswin Restaurant","uuid":"93f09ef7-b812-412b-a93e-bf11f3c63bbd","city":"13","area":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"ajwbqnjqv1iicaxaibss","cuisines":["Chinese","South Indian","North Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":4.400000095367432,"slugs":{"restaurant":"aswin-restaurant-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Expressway, Rajagiri Valley, Kakkanad, Kochi","locality":"Rajagiri Valley","parentId":20652,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157609~p=4~eid=00000188-d719-9296-01a5-695400100452~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4.4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"101001","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":4.400000095367432,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.9","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"55641","name":"Sandwich Walas","uuid":"ba2e3f77-9c49-4839-97a9-0aa1dab44fc3","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"a1zwjsdczhjhtybtep6p","cuisines":["Continental","Italian","Desserts","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"slaString":"22 MINS","lastMileTravel":3,"slugs":{"restaurant":"sandwichwallas-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":20900,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"55641","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"53380","name":"The Ice Cream Factory","uuid":"2ab80db0-7f5b-4bb6-870c-f891798f9330","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"k9drb9ymyxttftkv9u4g","cuisines":["Ice Cream","Beverages"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"slaString":"26 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-icecream-factory-and-sandiwchwalas-infopark-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":209959,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"53380","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"52083","name":"Palaaram","uuid":"f59dc53f-d3b7-4d7e-9154-8920c3f3bdbb","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"zchpuqit7k4pdndgse4t","cuisines":["Kerala","Biryani","North Indian","Arabian","Chinese"],"tags":[],"costForTwo":40000,"costForTwoString":"₹400 FOR TWO","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"slaString":"31 MINS","lastMileTravel":7.699999809265137,"slugs":{"restaurant":"palaaram-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Vallathol Junction, Thrikkakara, Kakkanad, Kochi","locality":"Thrikkakara","parentId":18945,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":5400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":5400,"message":"","title":"Delivery Charge","amount":"5400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157568~p=7~eid=00000188-d719-9296-01a5-695500100740~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"7.6 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"52083","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"lastMileTravel":7.699999809265137,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.1","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"332686","name":"Cake Hut","uuid":"2fb48fc5-0ea8-41f6-beca-1a1d6418df0d","city":"13","areaName":"Kakkanad","totalRatingsString":"100+ ratings","cloudinaryImageId":"yyh1kcfnhsptmyjsap2d","cuisines":["Bakery"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"slaString":"18 MINS","lastMileTravel":3,"slugs":{"restaurant":"cake-hut-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"9/704 (9/417-I A) HEERA CYBER VIEWS INFOPARK ROAD KAKKANAD EDACHIRA KOCHI, District - Ernakulam, STATE - Kerala","locality":"Edachira","parentId":4752,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO ₹50","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"332686","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.5","totalRatings":100,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"51485","name":"Blooms Berry","uuid":"2f5a59f7-7742-495c-b71e-58fc8a88bd45","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"eo2wjhpdomzt75thdmg5","cuisines":["South Indian","North Indian","Chinese"],"tags":[],"costForTwo":50000,"costForTwoString":"₹500 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":3,"slugs":{"restaurant":"blooms-berry-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Road, Kusumagiri, Kakkanad, Kochi","locality":"kusumagiri","parentId":47930,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"51485","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.4","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"480622","name":"Paradise Hotel - Kakkanad","uuid":"7fe754c3-ff53-4d66-9490-26208e63b9b5","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"rkqv12lccau98khsp2t7","cuisines":["Biryani","Kerala"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":5,"slugs":{"restaurant":"hotel-paradise-bakers-and-food-court-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Ground floor,16/693,AYODYA BUILDING,NEAR CIVIL STATION,KAKKANAD,ERNAKULAM,682030","locality":"Civil Station","parentId":20246,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157552~p=10~eid=00000188-d719-9296-01a5-695600100a0a~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹120","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"480622","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.8","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"377310","name":"The Belgian Waffle Co.","uuid":"6c07dcf0-c38c-4592-938a-93a1d818b56b","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"vnakusb7yq6kaxkxf6cj","cuisines":["Waffle","Desserts","Ice Cream","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"slaString":"48 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-belgian-waffle-co-edachira-infopark-road-kakkanad-2","city":"kochi"},"cityState":"13","address":"Ground Floor, Heera Cyberviews, Edachira Infopark Road,Kakkanad, Kochi -682030","locality":"Edachira Infopark Road","parentId":2233,"unserviceable":false,"veg":true,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"377310","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.2","totalRatings":1000,"new":false},"subtype":"basic"}]');
+
+},{}],"bMboU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ffb1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ffb1.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
 const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRatingString, lastMileTravel, costForTwo })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card ",
@@ -35718,28 +35892,28 @@ const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRating
                 src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 13,
+                lineNumber: 17,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 14,
+                lineNumber: 18,
                 columnNumber: 10
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: cuisines
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 15,
+                lineNumber: 19,
                 columnNumber: 10
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: areaName
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 16,
+                lineNumber: 20,
                 columnNumber: 10
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -35753,45 +35927,45 @@ const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRating
                                 class: "fa-solid fa-star"
                             }, void 0, false, {
                                 fileName: "src/components/RestaurantCard.js",
-                                lineNumber: 19,
+                                lineNumber: 25,
                                 columnNumber: 11
                             }, undefined),
                             avgRatingString
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 18,
+                        lineNumber: 22,
                         columnNumber: 10
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: lastMileTravel
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 20,
+                        lineNumber: 26,
                         columnNumber: 12
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: costForTwo
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
-                        lineNumber: 21,
+                        lineNumber: 27,
                         columnNumber: 8
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 10
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCard.js",
-        lineNumber: 12,
-        columnNumber: 9
+        lineNumber: 16,
+        columnNumber: 10
     }, undefined);
 };
 _c = RestaurantCard;
-exports.default = RestaurantCard;
+var _default = exports.default = RestaurantCard;
 var _c;
 $RefreshReg$(_c, "RestaurantCard");
 
@@ -35800,70 +35974,29 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6mqGZ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "url", ()=>url);
-parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
-const url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667";
-const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.083909325810092&lng=77.64086888929793&restaurantId=";
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6mqGZ":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.url = exports.MENU_API = void 0;
+const url = exports.url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667";
+const MENU_API = exports.MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.083909325810092&lng=77.64086888929793&restaurantId=";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kGloa":[function(require,module,exports) {
-module.exports = JSON.parse('[{"type":"restaurant","info":{"type":"F","id":"60008","name":"Alakapuri","uuid":"c6d3096e-497a-4fce-96a7-da9e925af2c4","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"k2why61tsxk9sh0sl68d","cuisines":["South Indian","Kerala","North Indian"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":5,"slugs":{"restaurant":"alakapuri-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Near Civil Station Road, Kakkanad, Kochi","locality":"Civil Station Road","parentId":20242,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157557~p=1~eid=00000188-d719-9296-01a5-69530010017e~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"60008","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.4","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"553867","name":"Harsh Dhaba","uuid":"c28a6e45-10dc-462c-bf8e-2c9a0443c808","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"qzh1wruc0ifwvy9jbi07","cuisines":["North Indian","South Indian"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"slaString":"29 MINS","lastMileTravel":3,"slugs":{"restaurant":"harsh-dhaba-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"8/965 B THENGODE P O,EDACHIRA,KAKKAAD,THRIKKAKARA CIRCLE,ERNAKULAM KERALA-682030","locality":"Thrikkakara","parentId":333110,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"10% OFF","subHeader":"ABOVE ₹800","discountTag":"FLAT DEAL","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"553867","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.3","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"282413","name":"Veetile Oonu","uuid":"454c3590-ebbb-4167-a8e6-b700f6902597","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"dj7vtgexkqn75gmlvjev","cuisines":["South Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"slaString":"21 MINS","lastMileTravel":4,"slugs":{"restaurant":"veetile-oonu-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"IX / 817, Chakkalakkal Moolayil, Rajagiri valley kakkanad , Ernakulam, KOCHI CIRCLE, Kochi - 682001","locality":"Chakkalakkal Moolayil","parentId":222003,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"282413","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"lastMileTravel":4,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.9","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"101001","name":"Aswin Restaurant","uuid":"93f09ef7-b812-412b-a93e-bf11f3c63bbd","city":"13","area":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"ajwbqnjqv1iicaxaibss","cuisines":["Chinese","South Indian","North Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":4.400000095367432,"slugs":{"restaurant":"aswin-restaurant-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Expressway, Rajagiri Valley, Kakkanad, Kochi","locality":"Rajagiri Valley","parentId":20652,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157609~p=4~eid=00000188-d719-9296-01a5-695400100452~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4.4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"101001","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":4.400000095367432,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.9","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"55641","name":"Sandwich Walas","uuid":"ba2e3f77-9c49-4839-97a9-0aa1dab44fc3","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"a1zwjsdczhjhtybtep6p","cuisines":["Continental","Italian","Desserts","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"slaString":"22 MINS","lastMileTravel":3,"slugs":{"restaurant":"sandwichwallas-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":20900,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"55641","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"53380","name":"The Ice Cream Factory","uuid":"2ab80db0-7f5b-4bb6-870c-f891798f9330","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"k9drb9ymyxttftkv9u4g","cuisines":["Ice Cream","Beverages"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"slaString":"26 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-icecream-factory-and-sandiwchwalas-infopark-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":209959,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"53380","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"52083","name":"Palaaram","uuid":"f59dc53f-d3b7-4d7e-9154-8920c3f3bdbb","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"zchpuqit7k4pdndgse4t","cuisines":["Kerala","Biryani","North Indian","Arabian","Chinese"],"tags":[],"costForTwo":40000,"costForTwoString":"₹400 FOR TWO","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"slaString":"31 MINS","lastMileTravel":7.699999809265137,"slugs":{"restaurant":"palaaram-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Vallathol Junction, Thrikkakara, Kakkanad, Kochi","locality":"Thrikkakara","parentId":18945,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":5400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":5400,"message":"","title":"Delivery Charge","amount":"5400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157568~p=7~eid=00000188-d719-9296-01a5-695500100740~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"7.6 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"52083","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"lastMileTravel":7.699999809265137,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.1","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"332686","name":"Cake Hut","uuid":"2fb48fc5-0ea8-41f6-beca-1a1d6418df0d","city":"13","areaName":"Kakkanad","totalRatingsString":"100+ ratings","cloudinaryImageId":"yyh1kcfnhsptmyjsap2d","cuisines":["Bakery"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"slaString":"18 MINS","lastMileTravel":3,"slugs":{"restaurant":"cake-hut-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"9/704 (9/417-I A) HEERA CYBER VIEWS INFOPARK ROAD KAKKANAD EDACHIRA KOCHI, District - Ernakulam, STATE - Kerala","locality":"Edachira","parentId":4752,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO ₹50","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"332686","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.5","totalRatings":100,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"51485","name":"Blooms Berry","uuid":"2f5a59f7-7742-495c-b71e-58fc8a88bd45","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"eo2wjhpdomzt75thdmg5","cuisines":["South Indian","North Indian","Chinese"],"tags":[],"costForTwo":50000,"costForTwoString":"₹500 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":3,"slugs":{"restaurant":"blooms-berry-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Road, Kusumagiri, Kakkanad, Kochi","locality":"kusumagiri","parentId":47930,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"51485","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.4","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"480622","name":"Paradise Hotel - Kakkanad","uuid":"7fe754c3-ff53-4d66-9490-26208e63b9b5","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"rkqv12lccau98khsp2t7","cuisines":["Biryani","Kerala"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":5,"slugs":{"restaurant":"hotel-paradise-bakers-and-food-court-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Ground floor,16/693,AYODYA BUILDING,NEAR CIVIL STATION,KAKKANAD,ERNAKULAM,682030","locality":"Civil Station","parentId":20246,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157552~p=10~eid=00000188-d719-9296-01a5-695600100a0a~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹120","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"480622","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.8","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"377310","name":"The Belgian Waffle Co.","uuid":"6c07dcf0-c38c-4592-938a-93a1d818b56b","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"vnakusb7yq6kaxkxf6cj","cuisines":["Waffle","Desserts","Ice Cream","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"slaString":"48 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-belgian-waffle-co-edachira-infopark-road-kakkanad-2","city":"kochi"},"cityState":"13","address":"Ground Floor, Heera Cyberviews, Edachira Infopark Road,Kakkanad, Kochi -682030","locality":"Edachira Infopark Road","parentId":2233,"unserviceable":false,"veg":true,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"377310","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.2","totalRatings":1000,"new":false},"subtype":"basic"}]');
-
-},{}],"g6ZGj":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0b04.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Shimmer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "restaurant-list",
-            children: Array(10).fill("").map((e, index)=>{
-                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "card-shimmer"
-                }, void 0, false, {
-                    fileName: "src/components/Shimmer.js",
-                    lineNumber: 5,
-                    columnNumber: 53
-                }, undefined);
-            })
-        }, void 0, false, {
-            fileName: "src/components/Shimmer.js",
-            lineNumber: 4,
-            columnNumber: 9
-        }, undefined)
-    }, void 0, false);
-};
-_c = Shimmer;
-exports.default = Shimmer;
-var _c;
-$RefreshReg$(_c, "Shimmer");
-
-  $parcel$ReactRefreshHelpers$0b04.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"74Yls":[function(require,module,exports) {
+},{}],"74Yls":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$03b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$03b2.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("1b5499d8c7068196");
 const useOnline = ()=>{
-    _s();
     const [isOnline, setisOnline] = (0, _react.useState)(navigator.onLine);
     //doubt regarding true , false;
     const handleOnline = ()=>{
@@ -35892,27 +36025,76 @@ const useOnline = ()=>{
     console.log(isOnline);
     return isOnline;
 };
-_s(useOnline, "5gtQ7bocpIhm8W88FZTL3Fcsp2A=");
-exports.default = useOnline;
+var _default = exports.default = useOnline;
 
   $parcel$ReactRefreshHelpers$03b2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
+},{"1b5499d8c7068196":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "restaurant-list",
+            children: Array(10).fill("").map((e, index)=>{
+                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "card-shimmer"
+                }, void 0, false, {
+                    fileName: "src/components/Shimmer.js",
+                    lineNumber: 11,
+                    columnNumber: 16
+                }, undefined);
+            })
+        }, void 0, false, {
+            fileName: "src/components/Shimmer.js",
+            lineNumber: 9,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
+};
+_c = Shimmer;
+var _default = exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$5b98.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-class About extends (0, _reactDefault.default).Component {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("bbc6d23085232c2d"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+class About extends _react.default.Component {
     render(props) {
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
             children: [
@@ -35921,32 +36103,33 @@ class About extends (0, _reactDefault.default).Component {
             ]
         }, void 0, true, {
             fileName: "src/components/About.js",
-            lineNumber: 4,
+            lineNumber: 11,
             columnNumber: 12
         }, this);
     }
 }
-exports.default = About;
+var _default = exports.default = About;
 
   $parcel$ReactRefreshHelpers$5b98.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"kvula":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","bbc6d23085232c2d":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$0ba4.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRouterDom = require("6c05e58b798cb450");
 const Error = ()=>{
-    _s();
     const err = (0, _reactRouterDom.useRouteError)();
     console.log(err);
     console.log(err.status);
@@ -35956,33 +36139,28 @@ const Error = ()=>{
                 children: "OOPS"
             }, void 0, false, {
                 fileName: "src/components/Error.js",
-                lineNumber: 9,
+                lineNumber: 13,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "Something went wrong"
             }, void 0, false, {
                 fileName: "src/components/Error.js",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: err.status
             }, void 0, false, {
                 fileName: "src/components/Error.js",
-                lineNumber: 11,
+                lineNumber: 15,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
-    return [
-        (0, _reactRouterDom.useRouteError)
-    ];
-});
 _c = Error;
-exports.default = Error;
+var _default = exports.default = Error;
 var _c;
 $RefreshReg$(_c, "Error");
 
@@ -35991,27 +36169,30 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","6c05e58b798cb450":"9xmpe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cgAOG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ee46.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "Contact me"
     }, void 0, false, {
         fileName: "src/components/Contact.js",
-        lineNumber: 3,
-        columnNumber: 5
+        lineNumber: 8,
+        columnNumber: 10
     }, undefined);
 };
 _c = Contact;
-exports.default = Contact;
+var _default = exports.default = Contact;
 var _c;
 $RefreshReg$(_c, "Contact");
 
@@ -36020,30 +36201,34 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PuJ6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PuJ6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$40d6.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactRouterDom = require("react-router-dom");
-var _react = require("react");
-var _constant = require("../utils/constant");
-var _shimmer = require("./Shimmer");
-var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-var _useRestaurants = require("../utils/useRestaurants");
-var _useRestaurantsDefault = parcelHelpers.interopDefault(_useRestaurants);
-var _cartSlice = require("../utils/cartSlice");
-var _reactRedux = require("react-redux");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _reactRouterDom = require("9336927c8088fd2d");
+var _react = require("ed57aa4d28cdb347");
+var _constant = require("4b06dee3c0084a23");
+var _Shimmer = _interopRequireDefault(require("e8c869ee9e3b26d5"));
+var _useRestaurants = _interopRequireDefault(require("2d69cf912df3f311"));
+var _cartSlice = require("6432b7ed4c1b617b");
+var _reactRedux = require("9431594e78354f9a");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
 const RestaurantMenu = ()=>{
-    _s();
     const { id } = (0, _reactRouterDom.useParams)();
-    const resInfo = (0, _useRestaurantsDefault.default)(id);
+    const resInfo = (0, _useRestaurants.default)(id);
     const dispatch = (0, _reactRedux.useDispatch)();
     const clearAll = ()=>{
         dispatch((0, _cartSlice.clearCart)());
@@ -36062,10 +36247,10 @@ const RestaurantMenu = ()=>{
     //  console.log(params);
     console.log(id);
     // console.log(areaName);
-    if (resInfo == null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+    if (resInfo == null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Shimmer.default, {}, void 0, false, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 32,
-        columnNumber: 30
+        lineNumber: 40,
+        columnNumber: 31
     }, undefined);
     //   const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
     const { name, cuisines, costForTwoMessage, cloudinaryImageId } = resInfo?.data?.cards[0]?.card?.card?.info;
@@ -36086,35 +36271,35 @@ const RestaurantMenu = ()=>{
                     ]
                 }, void 0, true, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 45,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: name
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 46,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: cuisines.join()
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 47,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 48,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: costForTwoMessage
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 49,
+                    lineNumber: 63,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36125,7 +36310,7 @@ const RestaurantMenu = ()=>{
                     children: "Add Item"
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 50,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36136,7 +36321,7 @@ const RestaurantMenu = ()=>{
                     children: "Remove Item"
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 53,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36147,7 +36332,7 @@ const RestaurantMenu = ()=>{
                     children: "Clear Cart"
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 56,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36158,7 +36343,7 @@ const RestaurantMenu = ()=>{
                                     children: item.card.info.name
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurantMenu.js",
-                                    lineNumber: 63,
+                                    lineNumber: 76,
                                     columnNumber: 16
                                 }, undefined),
                                 " ",
@@ -36172,8 +36357,8 @@ const RestaurantMenu = ()=>{
                                     children: "Add"
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurantMenu.js",
-                                    lineNumber: 63,
-                                    columnNumber: 48
+                                    lineNumber: 76,
+                                    columnNumber: 47
                                 }, undefined),
                                 "   ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -36184,38 +36369,31 @@ const RestaurantMenu = ()=>{
                                     children: "Remove"
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurantMenu.js",
-                                    lineNumber: 65,
-                                    columnNumber: 34
+                                    lineNumber: 80,
+                                    columnNumber: 31
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/RestaurantMenu.js",
-                            lineNumber: 62,
-                            columnNumber: 22
+                            lineNumber: 75,
+                            columnNumber: 18
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 59,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurantMenu.js",
-            lineNumber: 44,
+            lineNumber: 58,
             columnNumber: 9
         }, undefined)
     }, void 0, false);
 };
-_s(RestaurantMenu, "+srM4lFYwFJmpPFlLafZCnnhKN0=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams),
-        (0, _useRestaurantsDefault.default),
-        (0, _reactRedux.useDispatch)
-    ];
-});
 _c = RestaurantMenu;
-exports.default = RestaurantMenu; /****
+var _default = exports.default = RestaurantMenu; /****
  * improve remove item logic
  */ 
 var _c;
@@ -36226,26 +36404,27 @@ $RefreshReg$(_c, "RestaurantMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","react":"21dqq","../utils/constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj","../utils/useRestaurants":"3Dvwz","../utils/cartSlice":"5RXlr","react-redux":"bdVon"}],"3Dvwz":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","9336927c8088fd2d":"9xmpe","ed57aa4d28cdb347":"21dqq","4b06dee3c0084a23":"6mqGZ","e8c869ee9e3b26d5":"g6ZGj","2d69cf912df3f311":"3Dvwz","6432b7ed4c1b617b":"5RXlr","9431594e78354f9a":"bdVon","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3Dvwz":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d0be = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$d0be.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _constant = require("./constant");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = require("7198d03f600be0b3");
+var _constant = require("25fa0d172aaee681");
 const useRestaurants = (id)=>{
-    _s();
     const [resInfo, setresInfo] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
         getRestaurants();
     }, []);
     async function getRestaurants() {
-        const data = await fetch((0, _constant.MENU_API) + id);
+        const data = await fetch(_constant.MENU_API + id);
         const data2 = await data.json();
         const { name } = data2?.data?.cards[0]?.card?.card?.info;
         console.log(name);
@@ -36253,21 +36432,20 @@ const useRestaurants = (id)=>{
     }
     return resInfo;
 };
-_s(useRestaurants, "o1ZJXY7SToMRwsX7rxnhRuv+VcQ=");
-exports.default = useRestaurants;
+var _default = exports.default = useRestaurants;
 
   $parcel$ReactRefreshHelpers$d0be.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","./constant":"6mqGZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5RXlr":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addItem", ()=>addItem);
-parcelHelpers.export(exports, "removeItem", ()=>removeItem);
-parcelHelpers.export(exports, "clearCart", ()=>clearCart);
-var _toolkit = require("@reduxjs/toolkit");
+},{"7198d03f600be0b3":"21dqq","25fa0d172aaee681":"6mqGZ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5RXlr":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.removeItem = exports.default = exports.clearCart = exports.addItem = void 0;
+var _toolkit = require("533e83df82448f27");
 const cartSlice = (0, _toolkit.createSlice)({
     name: "cart",
     initialState: {
@@ -36286,9 +36464,12 @@ const cartSlice = (0, _toolkit.createSlice)({
     }
 });
 const { addItem, removeItem, clearCart } = cartSlice.actions;
-exports.default = cartSlice.reducer;
+exports.clearCart = clearCart;
+exports.removeItem = removeItem;
+exports.addItem = addItem;
+var _default = exports.default = cartSlice.reducer;
 
-},{"@reduxjs/toolkit":"lL1Ef","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lL1Ef":[function(require,module,exports) {
+},{"533e83df82448f27":"lL1Ef"}],"lL1Ef":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "EnhancerArray", ()=>EnhancerArray);
@@ -40169,44 +40350,44 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bc7c.prelude(module);
 
 try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _userContext = require("../utils/UserContext");
-var _react = require("react");
-var _s = $RefreshSig$();
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _UserContext = require("d6707f21e4bda42c");
+var _react = require("1a6bddd4cf39ea1f");
 const Footer = ()=>{
-    _s();
-    const { user } = (0, _react.useContext)((0, _userContext.UserContext));
+    const { user } = (0, _react.useContext)(_UserContext.UserContext);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Footer"
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
-                lineNumber: 7,
+                lineNumber: 14,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: user.name
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
-                lineNumber: 8,
+                lineNumber: 15,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: user.gmail
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
-                lineNumber: 9,
+                lineNumber: 16,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Footer, "JGtbL9nF23m+KDtp3kj55mw9GTc=");
 _c = Footer;
-exports.default = Footer;
+var _default = exports.default = Footer;
 var _c;
 $RefreshReg$(_c, "Footer");
 
@@ -40215,128 +40396,26 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserContext":"c5vgB","react":"21dqq"}],"9jO7B":[function(require,module,exports) {
-module.exports = require("73b0e4f98720e220")(require("4d59bf52767c9634").getBundleURL("lly8x") + "Trying.b0061df7.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root("akejt"));
-
-},{"73b0e4f98720e220":"61B45","4d59bf52767c9634":"lgJ39"}],"61B45":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","d6707f21e4bda42c":"c5vgB","1a6bddd4cf39ea1f":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"k2jPV":[function(require,module,exports) {
 "use strict";
-var cacheLoader = require("ca2a84f7fa4a3bb0");
-module.exports = cacheLoader(function(bundle) {
-    return new Promise(function(resolve, reject) {
-        // Don't insert the same script twice (e.g. if it was already in the HTML)
-        var existingScripts = document.getElementsByTagName("script");
-        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
-            return script.src === bundle;
-        })) {
-            resolve();
-            return;
-        }
-        var preloadLink = document.createElement("link");
-        preloadLink.href = bundle;
-        preloadLink.rel = "preload";
-        preloadLink.as = "script";
-        document.head.appendChild(preloadLink);
-        var script = document.createElement("script");
-        script.async = true;
-        script.type = "text/javascript";
-        script.src = bundle;
-        script.onerror = function(e) {
-            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
-            script.onerror = script.onload = null;
-            script.remove();
-            reject(error);
-        };
-        script.onload = function() {
-            script.onerror = script.onload = null;
-            resolve();
-        };
-        document.getElementsByTagName("head")[0].appendChild(script);
-    });
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
-
-},{"ca2a84f7fa4a3bb0":"j49pS"}],"j49pS":[function(require,module,exports) {
-"use strict";
-var cachedBundles = {};
-var cachedPreloads = {};
-var cachedPrefetches = {};
-function getCache(type) {
-    switch(type){
-        case "preload":
-            return cachedPreloads;
-        case "prefetch":
-            return cachedPrefetches;
-        default:
-            return cachedBundles;
-    }
-}
-module.exports = function(loader, type) {
-    return function(bundle) {
-        var cache = getCache(type);
-        if (cache[bundle]) return cache[bundle];
-        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
-            delete cache[bundle];
-            throw e;
-        });
+exports.default = void 0;
+var _toolkit = require("6639be2575f2c3a7");
+var _cartSlice = _interopRequireDefault(require("28fd56dfb6d3948f"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
     };
-};
-
-},{}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
 }
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"60fKT":[function(require,module,exports) {
-module.exports = require("8eb3d3d2be91ff95")(require("394b1e8497d3a309").getBundleURL("lly8x") + "SwiggyMart.1b041ee1.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root("kZdPi"));
-
-},{"8eb3d3d2be91ff95":"61B45","394b1e8497d3a309":"lgJ39"}],"k2jPV":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _toolkit = require("@reduxjs/toolkit");
-var _cartSlice = require("./cartSlice");
-var _cartSliceDefault = parcelHelpers.interopDefault(_cartSlice);
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        cart: (0, _cartSliceDefault.default)
+        cart: _cartSlice.default
     }
 });
-exports.default = store;
+var _default = exports.default = store;
 
-},{"@reduxjs/toolkit":"lL1Ef","./cartSlice":"5RXlr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
+},{"6639be2575f2c3a7":"lL1Ef","28fd56dfb6d3948f":"5RXlr"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequire8dbe")
 
 //# sourceMappingURL=index.7826abd7.js.map
