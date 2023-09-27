@@ -1,0 +1,8 @@
+{
+    "presets": [["@babel/preset-env", {"targets": {"node": "current"}}]]
+}
+/**
+
+Adding comma , valid or not
+***
+*/
