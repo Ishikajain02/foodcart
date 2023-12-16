@@ -631,6 +631,6 @@ $RefreshReg$(_c, "Trying");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","2dc778d21935d005":"21dqq"}]},["liKET","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","2dc778d21935d005":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["liKET","1xC6H"], null, "parcelRequire8dbe")
 
 //# sourceMappingURL=Trying.b0061df7.js.map
