@@ -756,6 +756,6 @@ $RefreshReg$(_c1, "SwiggyMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","f283001fe48afbec":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","f283001fe48afbec":"21dqq"}]},["4iHE8","1xC6H"], null, "parcelRequire8dbe")
 
 //# sourceMappingURL=SwiggyMart.1b041ee1.js.map
