@@ -31,10 +31,10 @@ const Body =() =>{
     const data = await fetch(url);
     const data2 = await data.json();
     console.log(data2);
-    console.log(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+    console.log(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
       ?.restaurants);
-    setallRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-    setfilterRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setallRestaurants(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    setfilterRestaurants(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
  // const offline = useOnline(false);
  const offline = useOnline();

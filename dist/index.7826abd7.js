@@ -35659,9 +35659,9 @@ const Body = ()=>{
         const data = await fetch(_constant.url);
         const data2 = await data.json();
         console.log(data2);
-        console.log(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setallRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setfilterRestaurants(data2?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        console.log(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setallRestaurants(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setfilterRestaurants(data2?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     // const offline = useOnline(false);
     const offline = (0, _useOnline.default)();
@@ -35871,7 +35871,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.url = exports.MENU_API = void 0;
-const url = exports.url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667";
+const url = exports.url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2101585&lng=77.4293184&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 const MENU_API = exports.MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=13.083909325810092&lng=77.64086888929793&restaurantId=";
 
 },{}],"74Yls":[function(require,module,exports) {
