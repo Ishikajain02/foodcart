@@ -31,22 +31,27 @@ const RestaurantMenu =()=>{
  
     if(resInfo== null)return <Shimmer/>
  //   const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
-   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[0]?.card?.card?.info;
+   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[2]?.card?.card?.info;
    console.log(name);
    //console.log(name);
-    const{itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    const{itemCards} = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
   //const{itemCards} = resInfo?.cards[1]?.card?.card?.info;
     console.log(itemCards);
    //  console.log(name);
 
     return(
         <>
-        <div className="flex">
+        <div className="">
+        <div className="flex flex-row bg-black h-90 align-middle justify-center">
+       
+        <img className="h-[20rem] flex" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
+        <div className="flex flex-col text-white m-2 p-20 text-xl text-justify ">
         <h1>Restaurant id : {id}</h1>
-        <h2>{name}</h2>
+        <h2 className="text-4xl font-bold">{name}</h2>
         <h2>{cuisines.join()}</h2>
-        <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
         <h2>{costForTwoMessage}</h2>
+        </div>
+        </div>
         <button className="p-2 m-2  bg-green-400 " onClick={()=>{
           handlechange()
         }}>Add Item</button>
@@ -56,11 +61,16 @@ const RestaurantMenu =()=>{
         <button className="p-2 m-2 bg-blue-400" onClick={()=>{
           clearAll()
         }}>Clear Cart</button>
-        <div>
+        <div className="flex flex-col items-center justify-center">
+         
           {itemCards.map((item)=>{
                
-               return<ul >
-               <h3 >{item.card.info.name}</h3> <button className="p-1,m-1 bg-green-400" onClick={()=>{
+               return<ul className="border-spacing-10 m-2 p-2 border-black w-[30rem] flex flex-col  " >
+               <h3 >{item.card.info.name}</h3> 
+               {/*const imageid=item.card.info.name.imageId;*/}
+               <img className="h-8 flex w-10 justify-end items-end"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + item.card.info.imageId}></img>
+               
+               <button className="p-1,m-1 bg-green-400" onClick={()=>{
                 dispatch(addItem({item}))
                }}>Add</button>   <button className="bg-red-400 p-1,m-1"onClick ={()=>{
                 dispatch(removeItem());

@@ -45,8 +45,8 @@ const Body =() =>{
     return (allrestaurants.length ===0)? <Shimmer/> :(
     <>
       
-        <div className="search content-center">
-        <input className ="bg-neutral-200 px-4 m-8 ml-25"type="text" placeholder ="Search" value = {searchText} 
+        <div className="search content-center place-items-center flex flex-wrap justify-center">
+        <input className ="bg-neutral-200 px-8 m-10 ml-25 shadow-lg h-10"type="text" placeholder ="Search" value = {searchText} 
          onKeyDown={(e) => {
           if (e.key === 'Enter') {
             const data = filterData(searchText, allrestaurants);
@@ -57,7 +57,7 @@ const Body =() =>{
         
         onChange={(e) => setSearchText(e.target.value)} ></input>
         
-        <button  className = "btn bg-orange-500 m-0 px-4" type ="button" onClick={()=>{
+        <button  className = "btn bg-orange-500 m-0 px-4 h-10" type ="button" onClick={()=>{
           const data = filterData(searchText,allrestaurants);
           setfilterRestaurants(data);
         }} > Submit</button>
