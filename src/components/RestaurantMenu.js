@@ -4,6 +4,8 @@ import {MENU_API} from "../utils/constant";
 import Shimmer from "./Shimmer";
 import useRestaurants from "../utils/useRestaurants";
 import { addItem, clearCart, removeItem } from "../utils/cartSlice";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus ,faMinus } from '@fortawesome/free-solid-svg-icons'
 
 import { useDispatch } from "react-redux";
 const RestaurantMenu =()=>{
@@ -65,17 +67,22 @@ const RestaurantMenu =()=>{
          
           {itemCards.map((item)=>{
                
-               return<ul className="border-spacing-10 m-2 p-2 border-black w-[30rem] flex flex-col  " >
-               <h3 >{item.card.info.name}</h3> 
+               return<ul className="border-spacing-10 m-2 p-2 border-black w-[50rem] flex flex-row justify-between " >
+                <div className="flex flex-col w-[35rem]">
+               <h3 className="font-bold text-xl" >{item.card.info.name}</h3> 
+               <h4>{item.card.info.description}</h4>
+               </div>
                {/*const imageid=item.card.info.name.imageId;*/}
-               <img className="h-8 flex w-10 justify-end items-end"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + item.card.info.imageId}></img>
-               
-               <button className="p-1,m-1 bg-green-400" onClick={()=>{
+               <div className="flex flex-col ">
+               <img className="h-30 w-32 flex justify-end items-end rounded-md"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + item.card.info.imageId}></img>
+               <div className="flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 items-center">
+               <button className="p-1 m-1 " onClick={()=>{
                 dispatch(addItem({item}))
-               }}>Add</button>   <button className="bg-red-400 p-1,m-1"onClick ={()=>{
+               }}>  <FontAwesomeIcon icon={faPlus}/></button>   <button className=" p-1 m-1"onClick ={()=>{
                 dispatch(removeItem());
-               }}>Remove</button>
-               
+               }}> <FontAwesomeIcon icon={faMinus}/></button>
+               </div>
+               </div>
                
                </ul>
           })}

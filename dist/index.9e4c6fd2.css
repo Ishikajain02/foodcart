@@ -241,12 +241,20 @@ img, video {
   margin: 0;
 }
 
+.m-1 {
+  margin: .25rem;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
 
 .m-2 {
   margin: .5rem;
+}
+
+.mt-3 {
+  margin-top: .75rem;
 }
 
 .flex {
@@ -261,14 +269,6 @@ img, video {
   height: 7rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
 .h-\[20rem\] {
   height: 20rem;
 }
@@ -277,36 +277,36 @@ img, video {
   height: 4.5rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-\[35rem\] {
+  width: 35rem;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
+}
+
 .w-full {
   width: 100%;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[30rem\] {
-  width: 30rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.border-spacing-2 {
-  --tw-border-spacing-x: .5rem;
-  --tw-border-spacing-y: .5rem;
-  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
-}
-
-.border-spacing-6 {
-  --tw-border-spacing-x: 1.5rem;
-  --tw-border-spacing-y: 1.5rem;
-  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .border-spacing-10 {
@@ -367,27 +367,34 @@ img, video {
   margin-left: calc(.875rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.border-2 {
-  border-width: 2px;
+.rounded-md {
+  border-radius: .375rem;
 }
 
 .border {
   border-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
+.border-2 {
+  border-width: 2px;
+}
+
+.border-s-2 {
+  border-inline-start-width: 2px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-blue-400 {
@@ -415,21 +422,17 @@ img, video {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: .25rem;
 }
 
 .p-2 {
   padding: .5rem;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .p-20 {
@@ -479,24 +482,14 @@ img, video {
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -514,6 +507,18 @@ img, video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -521,15 +526,24 @@ img, video {
 .card {
   cursor: pointer;
   border-radius: 5px;
-  width: 250px;
+  flex-flow: column wrap;
+  width: 300px;
+  height: 350px;
   margin: 20px;
   padding: 10px;
+  display: flex;
   box-shadow: -1px 4px 20px 14px #0003;
 }
 
 .card > img {
   border-radius: 10px;
   width: 100%;
+}
+
+.card > h4 {
+  overflow-wrap: normal;
+  width: 300px;
+  display: flex;
 }
 
 .card > span {
@@ -539,6 +553,8 @@ img, video {
 
 .card > span > h4 {
   text-align: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .card > span > h4:first-child {

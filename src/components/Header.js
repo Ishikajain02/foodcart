@@ -8,7 +8,7 @@ import Cart from './Cart';
     return(
         <>      
 
-        <img  className ="h-28 p-2" alt = "text" src = "https://assets.materialup.com/uploads/578c1723-1046-4fb9-b068-10715210d08d/preview.jpg"/>
+        <img  className ="h-20 p-2" alt = "text" src = "https://icon2.cleanpng.com/20180331/ezq/kisspng-catering-food-computer-icons-logo-event-management-catering-5abf487c5eb658.714031151522485372388.jpg"/>
         
         </>
     )
@@ -23,11 +23,11 @@ const Header = () =>{
     const[IsLoggedIn,setIsLoggedIn] = useState(true);
     return(
     
-    <div className ="flex ">
+    <div className ="flex bg-white h-20 w-full shadow-md">
     
     <Tittle />
-    <div className = "px-2 flex py-5  items-center bg-orange-500 w-full h-28">
-   <ul className="flex py-10 px-2 items-center">
+    <div className = "px-2 flex py-5  items-center justify-end w-full shadow-md">
+   <ul className="flex py-10 px-2 justify-end items-end">
     <li className="px-4"><Link to="/">Home</Link></li>
     {/*<li><a href ="/about">About Us</a></li>*/}
     <li className="px-4">    <Link to ="/about">About Us </Link></li>
