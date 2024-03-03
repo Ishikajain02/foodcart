@@ -19,7 +19,7 @@ const RestaurantCard = ({
          
          <h4>{areaName}</h4>
          <span>
-         <h4 style={{ backgroundColor: avgRatingString >= 4.2 ? "green" : "red" }}>
+         <h4 style={{ backgroundColor: avgRatingString >= 3.5 ? "green" : "red" }}>
          <FontAwesomeIcon icon={faStar}/>{avgRatingString}</h4>
            <h4>{lastMileTravel}</h4>
        <h4>{costForTwo}</h4>

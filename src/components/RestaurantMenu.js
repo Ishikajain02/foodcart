@@ -33,10 +33,10 @@ const RestaurantMenu =()=>{
  
     if(resInfo== null)return <Shimmer/>
  //   const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
-   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[2]?.card?.card?.info;
+   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[0]?.card?.card?.info;
    console.log(name);
    //console.log(name);
-    const{itemCards} = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    const{itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
   //const{itemCards} = resInfo?.cards[1]?.card?.card?.info;
     console.log(itemCards);
    //  console.log(name);
@@ -75,7 +75,7 @@ const RestaurantMenu =()=>{
                {/*const imageid=item.card.info.name.imageId;*/}
                <div className="flex flex-col ">
                <img className="h-30 w-32 flex justify-end items-end rounded-md"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + item.card.info.imageId}></img>
-               <div className="flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 items-center">
+               <div className="flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 item-center">
                <button className="p-1 m-1 " onClick={()=>{
                 dispatch(addItem({item}))
                }}>  <FontAwesomeIcon icon={faPlus}/></button>   <button className=" p-1 m-1"onClick ={()=>{

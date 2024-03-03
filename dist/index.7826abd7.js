@@ -35814,7 +35814,7 @@ const RestaurantCard = ({ name, cuisines, areaName, cloudinaryImageId, avgRating
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         style: {
-                            backgroundColor: avgRatingString >= 4.2 ? "green" : "red"
+                            backgroundColor: avgRatingString >= 3.5 ? "green" : "red"
                         },
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactFontawesome.FontAwesomeIcon, {
@@ -61497,10 +61497,10 @@ const RestaurantMenu = ()=>{
         columnNumber: 31
     }, undefined);
     //   const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
-    const { name, cuisines, costForTwoMessage, cloudinaryImageId } = resInfo?.data?.cards[2]?.card?.card?.info;
+    const { name, cuisines, costForTwoMessage, cloudinaryImageId } = resInfo?.data?.cards[0]?.card?.card?.info;
     console.log(name);
     //console.log(name);
-    const { itemCards } = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    const { itemCards } = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
     //const{itemCards} = resInfo?.cards[1]?.card?.card?.info;
     console.log(itemCards);
     //  console.log(name);
@@ -61641,7 +61641,7 @@ const RestaurantMenu = ()=>{
                                             columnNumber: 16
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 items-center",
+                                            className: "flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 item-center",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                     className: "p-1 m-1 ",
@@ -61752,7 +61752,7 @@ const useRestaurants = (id)=>{
     async function getRestaurants() {
         const data = await fetch(_constant.MENU_API + id);
         const data2 = await data.json();
-        const { name } = data2?.data?.cards[2]?.card?.card?.info;
+        const { name } = data2?.data?.cards[0]?.card?.card?.info;
         console.log(name);
         setresInfo(data2);
     }

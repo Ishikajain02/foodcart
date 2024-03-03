@@ -26,17 +26,18 @@ how to add both tailwind and norml css*/
 }
 .card > h4{
    display:flex;
-   width: 300px;
+   width: 296px;
    /*flex-wrap: wrap;
    text-wrap: wrap;
    white-space: normal;*/
-   overflow-wrap: normal;
+   overflow-wrap: anywhere;
 
 }
 
 .card > span{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    overflow-wrap: break-word;
     
 }
 
@@ -44,6 +45,7 @@ how to add both tailwind and norml css*/
     text-align: center;
     display:flex;
     flex-wrap: wrap;
+    margin-right: 14px;
 }
 
 .card > span > h4:first-child{
