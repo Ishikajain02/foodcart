@@ -285,6 +285,10 @@ img, video {
   width: 8rem;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .w-\[35rem\] {
   width: 35rem;
 }
@@ -516,6 +520,7 @@ img, video {
 .card > img {
   border-radius: 10px;
   width: 100%;
+  height: 50%;
 }
 
 .card > h4 {

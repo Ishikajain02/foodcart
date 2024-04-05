@@ -12,7 +12,7 @@ const RestaurantCard = ({
     
     return(
         <div className="card  flex flex-col flex-wrap ">
-        <img src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
+        <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId } />
          <h2>{name}</h2>
        {/*  <div className="flex flex-wrap w-full">*/}
          <h4 className="">{cuisines}</h4>

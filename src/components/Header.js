@@ -8,7 +8,7 @@ import Cart from './Cart';
     return(
         <>      
 
-        <img  className ="h-20 p-2" alt = "text" src = "https://icon2.cleanpng.com/20180331/ezq/kisspng-catering-food-computer-icons-logo-event-management-catering-5abf487c5eb658.714031151522485372388.jpg"/>
+        <img  className ="h-20 p-2" alt = "text" src = "https://assets.materialup.com/uploads/578c1723-1046-4fb9-b068-10715210d08d/preview.jpg"/>
         
         </>
     )

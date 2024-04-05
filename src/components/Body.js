@@ -20,6 +20,7 @@ const Body =() =>{
   const [allrestaurants , setallRestaurants] = useState([]);
   const [filterrestaurants, setfilterRestaurants] = useState([]);
     const [searchText,setSearchText] = useState("");
+    const [darkmode,setdarkmode] = useState(false);
     console.log("re render");
     
   useEffect(() => {
@@ -43,10 +44,11 @@ const Body =() =>{
   if(!allrestaurants) return null;
   //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
     return (allrestaurants.length ===0)? <Shimmer/> :(
-    <>
+    <div style={{ backgroundColor: darkmode ? "black" : "white" }}
+    >
       
-        <div className="search content-center place-items-center flex flex-wrap justify-center">
-        <input className ="bg-neutral-200 px-8 m-10 ml-25 shadow-lg h-10"type="text" placeholder ="Search" value = {searchText} 
+        <div  className="search content-center place-items-center flex flex-wrap justify-center">
+        <input className ="bg-neutral-200 px-8 m-10 ml-25 shadow-lg h-10 w-96"type="text" placeholder ="Search" value = {searchText} 
          onKeyDown={(e) => {
           if (e.key === 'Enter') {
             const data = filterData(searchText, allrestaurants);
@@ -57,11 +59,11 @@ const Body =() =>{
         
         onChange={(e) => setSearchText(e.target.value)} ></input>
         
-        <button  className = "btn bg-orange-500 m-0 px-4 h-10" type ="button" onClick={()=>{
+        <button  className = "btn bg-orange-500 m-0 px-4 h-10 rounded-md" type ="button" onClick={()=>{
           const data = filterData(searchText,allrestaurants);
           setfilterRestaurants(data);
         }} > Submit</button>
-        
+        {(darkmode)?<button onClick={()=>{setdarkmode(false)}}>Light Mode</button>:<button onClick={()=>setdarkmode(false)}>Dark Mode</button>}
         </div>
     <div className=" restaurant-list flex px-3 space-x-3.5 flex-wrap">
   
@@ -72,7 +74,7 @@ const Body =() =>{
      </Link>
     })}
   </div>
-    </>
+    </div>
     )
 };
 export default Body;

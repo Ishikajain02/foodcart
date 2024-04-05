@@ -8,7 +8,7 @@ const useRestaurants=(id) =>{
       async function getRestaurants(){
             const data = await fetch(MENU_API + id);
             const data2 = await data.json();
-            const {name} =data2?.data?.cards[0]?.card?.card?.info;
+            const {name} =data2?.data?.cards[2]?.card?.card?.info;
             console.log(name);
             setresInfo(data2);
         }

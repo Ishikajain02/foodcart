@@ -28,25 +28,31 @@ const RestaurantMenu =()=>{
    // const locality = params.locality;
 
   //  console.log(params);
-  console.log(id);
+  //console.log(id);
    // console.log(areaName);
  
     if(resInfo== null)return <Shimmer/>
  //   const {name,cuisines,costForTwoMessage} = resInfo?.cards[2]?.card?.card?.info;
-   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[0]?.card?.card?.info;
-   console.log(name);
+   const {name,cuisines ,costForTwoMessage,cloudinaryImageId} = resInfo?.data?.cards[2]?.card?.card?.info;
    //console.log(name);
-    const{itemCards} = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
-  //const{itemCards} = resInfo?.cards[1]?.card?.card?.info;
+   //console.log(name);
+   console.log(resInfo);
+    const{itemCards} = resInfo?.data?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR
+    ?.cards?.[1]?.card?.card;
+  /*const{itemCards} = resInfo?.cards[1]?.card?.card?.info;
     console.log(itemCards);
    //  console.log(name);
+*/
+//const { cards } = resInfo?.data; // Destructure the cards array from the response
 
+// Assuming the structure follows this pattern
+//const itemCards = cards?.[4]?.card?.card?.tabs?.[1]?.content;
     return(
         <>
         <div className="">
         <div className="flex flex-row bg-black h-90 align-middle justify-center">
        
-        <img className="h-[20rem] flex" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId } />
+        <img className="h-[20rem] flex" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId } />
         <div className="flex flex-col text-white m-2 p-20 text-xl text-justify ">
         <h1>Restaurant id : {id}</h1>
         <h2 className="text-4xl font-bold">{name}</h2>
@@ -65,7 +71,7 @@ const RestaurantMenu =()=>{
         }}>Clear Cart</button>
         <div className="flex flex-col items-center justify-center">
          
-          {itemCards.map((item)=>{
+          {itemCards&&itemCards.map((item)=>{
                
                return<ul className="border-spacing-10 m-2 p-2 border-black w-[50rem] flex flex-row justify-between " >
                 <div className="flex flex-col w-[35rem]">
@@ -74,7 +80,7 @@ const RestaurantMenu =()=>{
                </div>
                {/*const imageid=item.card.info.name.imageId;*/}
                <div className="flex flex-col ">
-               <img className="h-30 w-32 flex justify-end items-end rounded-md"src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + item.card.info.imageId}></img>
+               <img className="h-30 w-32 flex justify-end items-end rounded-md"src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + item.card.info.imageId}></img>
                <div className="flex flex-row justify-between mt-3 border border-s-2 rounded-md h-8 item-center">
                <button className="p-1 m-1 " onClick={()=>{
                 dispatch(addItem({item}))
