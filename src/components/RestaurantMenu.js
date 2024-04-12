@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus ,faMinus } from '@fortawesome/free-solid-svg-icons'
 
 import { useDispatch } from "react-redux";
+import Menucard from "./Menucard";
 const RestaurantMenu =()=>{
  const {id } = useParams();
  const resInfo = useRestaurants(id);
@@ -76,7 +77,9 @@ const RestaurantMenu =()=>{
                return<ul className="border-spacing-10 m-2 p-2 border-black w-[50rem] flex flex-row justify-between " >
                 <div className="flex flex-col w-[35rem]">
                <h3 className="font-bold text-xl" >{item.card.info.name}</h3> 
-               <h4>{item.card.info.description}</h4>
+              {/* <h4 className="line-clamp-3" >{item.card.info.description}</h4>
+             <span on onClick={}>Read more</span>*/}
+             <Menucard description={item.card.info.description}/>
                </div>
                {/*const imageid=item.card.info.name.imageId;*/}
                <div className="flex flex-col ">
