@@ -5,6 +5,7 @@ import {url} from "../utils/constant";
 import useOnline from "../utils/useOnline";
 import {Link} from 'react-router-dom';
 import Shimmer from "./Shimmer";
+import Carousel from "./Carousel";
 function filterData(searchText,restaurants){
 const filterdata = restaurants.filter((restaurant) =>{
  return     restaurant.info.name.toLowerCase().includes(searchText.toLowerCase());
@@ -65,6 +66,10 @@ const Body =() =>{
         }} > Submit</button>
         {(darkmode)?<button onClick={()=>{setdarkmode(false)}}>Light Mode</button>:<button onClick={()=>setdarkmode(false)}>Dark Mode</button>}
         </div>
+        <div className="flex justify-center">
+        <Carousel/>
+        </div>
+       
     <div className=" restaurant-list flex px-3 space-x-3.5 flex-wrap">
   
     {filterrestaurants.map((restaurant) =>{

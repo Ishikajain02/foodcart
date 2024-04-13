@@ -74,7 +74,7 @@ const RestaurantMenu =()=>{
          
           {itemCards&&itemCards.map((item)=>{
                
-               return<ul className="border-spacing-10 m-2 p-2 border-black w-[50rem] flex flex-row justify-between " >
+               return<ul className="border-spacing-10 m-2 p-2 border-gray-400 border-b-2 w-[50rem] flex flex-row justify-between " >
                 <div className="flex flex-col w-[35rem]">
                <h3 className="font-bold text-xl" >{item.card.info.name}</h3> 
               {/* <h4 className="line-clamp-3" >{item.card.info.description}</h4>

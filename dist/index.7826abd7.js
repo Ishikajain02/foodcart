@@ -64920,6 +64920,7 @@ var _constant = require("8c09b7d1af900601");
 var _useOnline = _interopRequireDefault(require("c1f819b138cbd8cc"));
 var _reactRouterDom = require("3cae63fbb41e880e");
 var _Shimmer = _interopRequireDefault(require("dfdcad3f5b7c09c1"));
+var _Carousel = _interopRequireDefault(require("eb72196ab6e036f1"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -64983,14 +64984,14 @@ const Body = ()=>{
         children: "I am offline"
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 46,
+        lineNumber: 47,
         columnNumber: 24
     }, undefined);
     if (!allrestaurants) return null;
     //if(filterrestaurants.length===0) return <h1>Sorry not enough data</h1>;
     return allrestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Shimmer.default, {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 40
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         style: {
@@ -65014,7 +65015,7 @@ const Body = ()=>{
                         onChange: (e)=>setSearchText(e.target.value)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -65027,7 +65028,7 @@ const Body = ()=>{
                         children: " Submit"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 61,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined),
                     darkmode ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -65037,20 +65038,32 @@ const Body = ()=>{
                         children: "Light Mode"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 21
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: ()=>setdarkmode(false),
                         children: "Dark Mode"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 67,
+                        lineNumber: 68,
                         columnNumber: 32
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 53,
+                lineNumber: 54,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-center",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_Carousel.default, {}, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 70,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -65064,25 +65077,25 @@ const Body = ()=>{
                                 ...restaurant?.info
                             }, restaurant?.info?.id, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 72,
+                                lineNumber: 77,
                                 columnNumber: 107
                             }, undefined)
                         ]
                     }, restaurant.info.id, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 72,
+                        lineNumber: 77,
                         columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 69,
+                lineNumber: 74,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 63
     }, undefined);
 };
@@ -65096,7 +65109,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","2481c59d75fda5ac":"21dqq","eb9af9d6f4991187":"kGloa","414d9513f92cc73":"bMboU","8c09b7d1af900601":"6mqGZ","c1f819b138cbd8cc":"74Yls","3cae63fbb41e880e":"9xmpe","dfdcad3f5b7c09c1":"g6ZGj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kGloa":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","2481c59d75fda5ac":"21dqq","eb9af9d6f4991187":"kGloa","414d9513f92cc73":"bMboU","8c09b7d1af900601":"6mqGZ","c1f819b138cbd8cc":"74Yls","3cae63fbb41e880e":"9xmpe","dfdcad3f5b7c09c1":"g6ZGj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","eb72196ab6e036f1":"eWA0I"}],"kGloa":[function(require,module,exports) {
 "use strict";
 module.exports = JSON.parse('[{"type":"restaurant","info":{"type":"F","id":"60008","name":"Alakapuri","uuid":"c6d3096e-497a-4fce-96a7-da9e925af2c4","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"k2why61tsxk9sh0sl68d","cuisines":["South Indian","Kerala","North Indian"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":5,"slugs":{"restaurant":"alakapuri-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Near Civil Station Road, Kakkanad, Kochi","locality":"Civil Station Road","parentId":20242,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157557~p=1~eid=00000188-d719-9296-01a5-69530010017e~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"60008","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.4","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"553867","name":"Harsh Dhaba","uuid":"c28a6e45-10dc-462c-bf8e-2c9a0443c808","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"qzh1wruc0ifwvy9jbi07","cuisines":["North Indian","South Indian"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"slaString":"29 MINS","lastMileTravel":3,"slugs":{"restaurant":"harsh-dhaba-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"8/965 B THENGODE P O,EDACHIRA,KAKKAAD,THRIKKAKARA CIRCLE,ERNAKULAM KERALA-682030","locality":"Thrikkakara","parentId":333110,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"10% OFF","subHeader":"ABOVE ₹800","discountTag":"FLAT DEAL","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"553867","deliveryTime":29,"minDeliveryTime":29,"maxDeliveryTime":29,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.3","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"282413","name":"Veetile Oonu","uuid":"454c3590-ebbb-4167-a8e6-b700f6902597","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"dj7vtgexkqn75gmlvjev","cuisines":["South Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"slaString":"21 MINS","lastMileTravel":4,"slugs":{"restaurant":"veetile-oonu-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"IX / 817, Chakkalakkal Moolayil, Rajagiri valley kakkanad , Ernakulam, KOCHI CIRCLE, Kochi - 682001","locality":"Chakkalakkal Moolayil","parentId":222003,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"282413","deliveryTime":21,"minDeliveryTime":21,"maxDeliveryTime":21,"lastMileTravel":4,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.9","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"101001","name":"Aswin Restaurant","uuid":"93f09ef7-b812-412b-a93e-bf11f3c63bbd","city":"13","area":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"ajwbqnjqv1iicaxaibss","cuisines":["Chinese","South Indian","North Indian"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":4.400000095367432,"slugs":{"restaurant":"aswin-restaurant-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Expressway, Rajagiri Valley, Kakkanad, Kochi","locality":"Rajagiri Valley","parentId":20652,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3900,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3900,"message":"","title":"Delivery Charge","amount":"3900","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157609~p=4~eid=00000188-d719-9296-01a5-695400100452~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"4.4 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"101001","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":4.400000095367432,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.9","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"55641","name":"Sandwich Walas","uuid":"ba2e3f77-9c49-4839-97a9-0aa1dab44fc3","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"a1zwjsdczhjhtybtep6p","cuisines":["Continental","Italian","Desserts","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"slaString":"22 MINS","lastMileTravel":3,"slugs":{"restaurant":"sandwichwallas-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":20900,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"55641","deliveryTime":22,"minDeliveryTime":22,"maxDeliveryTime":22,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"53380","name":"The Ice Cream Factory","uuid":"2ab80db0-7f5b-4bb6-870c-f891798f9330","city":"13","areaName":"Kakkanad","totalRatingsString":"5000+ ratings","cloudinaryImageId":"k9drb9ymyxttftkv9u4g","cuisines":["Ice Cream","Beverages"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"slaString":"26 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-icecream-factory-and-sandiwchwalas-infopark-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Carnival Infopark - Phase 3, Ground Floor","locality":"3rd Phase","parentId":209959,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"53380","deliveryTime":26,"minDeliveryTime":26,"maxDeliveryTime":26,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.0","totalRatings":5000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"52083","name":"Palaaram","uuid":"f59dc53f-d3b7-4d7e-9154-8920c3f3bdbb","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"zchpuqit7k4pdndgse4t","cuisines":["Kerala","Biryani","North Indian","Arabian","Chinese"],"tags":[],"costForTwo":40000,"costForTwoString":"₹400 FOR TWO","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"slaString":"31 MINS","lastMileTravel":7.699999809265137,"slugs":{"restaurant":"palaaram-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Vallathol Junction, Thrikkakara, Kakkanad, Kochi","locality":"Thrikkakara","parentId":18945,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":5400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":5400,"message":"","title":"Delivery Charge","amount":"5400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157568~p=7~eid=00000188-d719-9296-01a5-695500100740~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"7.6 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"52083","deliveryTime":31,"minDeliveryTime":31,"maxDeliveryTime":31,"lastMileTravel":7.699999809265137,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"4.1","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"332686","name":"Cake Hut","uuid":"2fb48fc5-0ea8-41f6-beca-1a1d6418df0d","city":"13","areaName":"Kakkanad","totalRatingsString":"100+ ratings","cloudinaryImageId":"yyh1kcfnhsptmyjsap2d","cuisines":["Bakery"],"tags":[],"costForTwo":30000,"costForTwoString":"₹300 FOR TWO","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"slaString":"18 MINS","lastMileTravel":3,"slugs":{"restaurant":"cake-hut-kakkanad-kakkanad-2","city":"kochi"},"cityState":"13","address":"9/704 (9/417-I A) HEERA CYBER VIEWS INFOPARK ROAD KAKKANAD EDACHIRA KOCHI, District - Ernakulam, STATE - Kerala","locality":"Edachira","parentId":4752,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"20% OFF","subHeader":"UPTO ₹50","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"332686","deliveryTime":18,"minDeliveryTime":18,"maxDeliveryTime":18,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.5","totalRatings":100,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"51485","name":"Blooms Berry","uuid":"2f5a59f7-7742-495c-b71e-58fc8a88bd45","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"eo2wjhpdomzt75thdmg5","cuisines":["South Indian","North Indian","Chinese"],"tags":[],"costForTwo":50000,"costForTwoString":"₹500 FOR TWO","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"slaString":"27 MINS","lastMileTravel":3,"slugs":{"restaurant":"blooms-berry-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Infopark Road, Kusumagiri, Kakkanad, Kochi","locality":"kusumagiri","parentId":47930,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹100","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"51485","deliveryTime":27,"minDeliveryTime":27,"maxDeliveryTime":27,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"3.4","totalRatings":1000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"480622","name":"Paradise Hotel - Kakkanad","uuid":"7fe754c3-ff53-4d66-9490-26208e63b9b5","city":"13","areaName":"Kakkanad","totalRatingsString":"10000+ ratings","cloudinaryImageId":"rkqv12lccau98khsp2t7","cuisines":["Biryani","Kerala"],"tags":[],"costForTwo":25000,"costForTwoString":"₹250 FOR TWO","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"slaString":"28 MINS","lastMileTravel":5,"slugs":{"restaurant":"hotel-paradise-bakers-and-food-court-kakkanad-kakkanad","city":"kochi"},"cityState":"13","address":"Ground floor,16/693,AYODYA BUILDING,NEAR CIVIL STATION,KAKKANAD,ERNAKULAM,682030","locality":"Civil Station","parentId":20246,"unserviceable":false,"veg":false,"select":false,"favorite":false,"tradeCampaignHeaders":[],"ribbon":[{"type":"PROMOTED"}],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":4400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":4400,"message":"","title":"Delivery Charge","amount":"4400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"cid=7157552~p=10~eid=00000188-d719-9296-01a5-695600100a0a~srvts=1687235957398","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"5 kms","hasSurge":false,"aggregatedDiscountInfoV3":{"header":"60% OFF","subHeader":"UPTO ₹120","discountTag":"","headerTypeV2":0},"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"480622","deliveryTime":28,"minDeliveryTime":28,"maxDeliveryTime":28,"lastMileTravel":5,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":true,"avgRating":"3.8","totalRatings":10000,"new":false},"subtype":"basic"},{"type":"restaurant","info":{"type":"F","id":"377310","name":"The Belgian Waffle Co.","uuid":"6c07dcf0-c38c-4592-938a-93a1d818b56b","city":"13","areaName":"Kakkanad","totalRatingsString":"1000+ ratings","cloudinaryImageId":"vnakusb7yq6kaxkxf6cj","cuisines":["Waffle","Desserts","Ice Cream","Beverages"],"tags":[],"costForTwo":20000,"costForTwoString":"₹200 FOR TWO","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"slaString":"48 MINS","lastMileTravel":3,"slugs":{"restaurant":"the-belgian-waffle-co-edachira-infopark-road-kakkanad-2","city":"kochi"},"cityState":"13","address":"Ground Floor, Heera Cyberviews, Edachira Infopark Road,Kakkanad, Kochi -682030","locality":"Edachira Infopark Road","parentId":2233,"unserviceable":false,"veg":true,"select":false,"favorite":false,"tradeCampaignHeaders":[],"chain":[],"feeDetails":{"fees":[{"name":"distance","fee":3400,"message":""},{"name":"time","fee":0,"message":""},{"name":"special","fee":0,"message":""}],"totalFees":3400,"message":"","title":"Delivery Charge","amount":"3400","icon":""},"availability":{"opened":true,"nextOpenMessage":"","nextCloseMessage":""},"longDistanceEnabled":0,"rainMode":"NONE","thirdPartyAddress":false,"thirdPartyVendor":"","adTrackingID":"","badges":{"imageBased":[],"textBased":[],"textExtendedBadges":[]},"lastMileTravelString":"3 kms","hasSurge":false,"loyaltyDiscoverPresentationInfo":{"logoCtx":{"text":"BENEFITS","logo":"v1634558776/swiggy_one/OneLogo_3x.png"},"freedelMessage":"FREE DELIVERY","exclusiveOfferMessage":""},"sla":{"restaurantId":"377310","deliveryTime":48,"minDeliveryTime":48,"maxDeliveryTime":48,"lastMileTravel":3,"lastMileDistance":0,"serviceability":"SERVICEABLE","rainMode":"NONE","longDistance":"NOT_LONG_DISTANCE","preferentialService":false,"iconType":"EMPTY"},"promoted":false,"avgRating":"4.2","totalRatings":1000,"new":false},"subtype":"basic"}]');
 
@@ -65307,7 +65320,170 @@ $RefreshReg$(_c, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9R1Eu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eWA0I":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fec5.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("ae536e10354b8c35"));
+var _CarouselItem = _interopRequireDefault(require("fd05e9a89ef0ab0a"));
+var _constant = require("d1e4e72fdd59aeaf");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function(nodeInterop) {
+        return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || typeof obj !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+const Carousel = ()=>{
+    const [carousel, setcarousel] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        console.log("data");
+        getitem();
+    }, []);
+    async function getitem() {
+        const data = await fetch(_constant.url);
+        const data2 = await data.json();
+        setcarousel(data2.data?.cards[0].card.card?.imageGridCards?.info);
+    }
+    console.log(carousel);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: " flex  flex-col h-52 w-[85rem]",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "font-bold text-2xl",
+                children: "What's on your mind ?"
+            }, void 0, false, {
+                fileName: "src/components/Carousel.js",
+                lineNumber: 26,
+                columnNumber: 9
+            }, undefined),
+            carousel.map((item)=>{
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {
+                    imageId: item.imageId
+                }, item.id, false, {
+                    fileName: "src/components/Carousel.js",
+                    lineNumber: 29,
+                    columnNumber: 7
+                }, undefined);
+            }),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {}, void 0, false, {
+                fileName: "src/components/Carousel.js",
+                lineNumber: 31,
+                columnNumber: 9
+            }, undefined),
+            "Carousel"
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Carousel.js",
+        lineNumber: 25,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Carousel;
+var _default = exports.default = Carousel;
+var _c;
+$RefreshReg$(_c, "Carousel");
+
+  $parcel$ReactRefreshHelpers$fec5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","ae536e10354b8c35":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","fd05e9a89ef0ab0a":"74hDp","d1e4e72fdd59aeaf":"6mqGZ"}],"74hDp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7013 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7013.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("3fc508f07ae2740d"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+/*const CarouselItem=({
+    imageId
+})=>{
+    return(
+<div className="flex ">
+<img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + imageId }className="rounded-full w-40 h-40"></img>
+
+</div>
+)}
+export default  CarouselItem;*/ const CarouselItem = ({ imageId })=>{
+    const baseURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+    if (!imageId) {
+        console.log("I am NULL");
+        return null; // Skip rendering if imageId is undefined
+    }
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            src: baseURL + imageId,
+            className: "rounded-full w-40 h-40",
+            alt: "carousel-item"
+        }, void 0, false, {
+            fileName: "src/components/CarouselItem.js",
+            lineNumber: 30,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/CarouselItem.js",
+        lineNumber: 29,
+        columnNumber: 10
+    }, undefined);
+};
+_c = CarouselItem;
+var _default = exports.default = CarouselItem;
+var _c;
+$RefreshReg$(_c, "CarouselItem");
+
+  $parcel$ReactRefreshHelpers$7013.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","3fc508f07ae2740d":"21dqq"}],"9R1Eu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -65598,7 +65774,7 @@ const RestaurantMenu = ()=>{
                     className: "flex flex-col items-center justify-center",
                     children: itemCards && itemCards.map((item)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                            className: "border-spacing-10 m-2 p-2 border-black w-[50rem] flex flex-row justify-between ",
+                            className: "border-spacing-10 m-2 p-2 border-gray-400 border-b-2 w-[50rem] flex flex-row justify-between ",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex flex-col w-[35rem]",
