@@ -17,8 +17,8 @@ const CarouselItem = ({ imageId }) => {
         return null; // Skip rendering if imageId is undefined
     }
     return (
-        <div className="flex">
-            <img src={baseURL + imageId} className="rounded-full w-40 h-40" alt="carousel-item" />
+        <div className="flex h-42 w-42 ">
+            <img src={baseURL + imageId} className="rounded-full w-40 h-40 p-2" alt="carousel-item" />
         </div>
     );
 };

@@ -15,15 +15,16 @@ const Carousel = () => {
     }
   console.log(carousel);
   return (
-    <div className=' flex  flex-col h-52 w-[85rem]'>
+    <div className=' flex  flex-col h-[15rem] w-[85rem]'>
         <h4 className='font-bold text-2xl'>What's on your mind ?</h4>
         {/*console.log(carousel[0].imageId)*/}
+        <div className='flex flex-row  flex-nowrap overflow-hidden overflow-x-scroll h-52 w-[85rem]'>
         {carousel.map((item)=>{
-        
-         <CarouselItem key={item.id} imageId={item.imageId}/>
+        return<div className='flex-grow-1 shrink-0'> <CarouselItem key={item.id} imageId={item.imageId}/></div>
+      
         })}
         <CarouselItem/>
-        
+        </div>
         
         
         Carousel

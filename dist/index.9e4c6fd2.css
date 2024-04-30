@@ -302,6 +302,10 @@ img, video {
   height: 2rem;
 }
 
+.h-\[15rem\] {
+  height: 15rem;
+}
+
 .h-\[20rem\] {
   height: 20rem;
 }
@@ -322,6 +326,10 @@ img, video {
   width: 24rem;
 }
 
+.w-\[107rem\] {
+  width: 107rem;
+}
+
 .w-\[35rem\] {
   width: 35rem;
 }
@@ -336,6 +344,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .border-spacing-10 {
@@ -354,6 +366,10 @@ img, video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .place-items-center {
@@ -394,6 +410,14 @@ img, video {
   --tw-space-x-reverse: 0;
   margin-right: calc(.875rem * var(--tw-space-x-reverse));
   margin-left: calc(.875rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded-full {

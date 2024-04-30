@@ -65380,7 +65380,7 @@ const Carousel = ()=>{
     }
     console.log(carousel);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: " flex  flex-col h-52 w-[85rem]",
+        className: " flex  flex-col h-[15rem] w-[85rem]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 className: "font-bold text-2xl",
@@ -65390,18 +65390,37 @@ const Carousel = ()=>{
                 lineNumber: 26,
                 columnNumber: 9
             }, undefined),
-            carousel.map((item)=>{
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {
-                    imageId: item.imageId
-                }, item.id, false, {
-                    fileName: "src/components/Carousel.js",
-                    lineNumber: 29,
-                    columnNumber: 7
-                }, undefined);
-            }),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-row  flex-nowrap overflow-hidden overflow-x-scroll h-52 w-[85rem]",
+                children: [
+                    carousel.map((item)=>{
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex-grow-1 shrink-0",
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {
+                                    imageId: item.imageId
+                                }, item.id, false, {
+                                    fileName: "src/components/Carousel.js",
+                                    lineNumber: 30,
+                                    columnNumber: 55
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Carousel.js",
+                            lineNumber: 30,
+                            columnNumber: 16
+                        }, undefined);
+                    }),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {}, void 0, false, {
+                        fileName: "src/components/Carousel.js",
+                        lineNumber: 32,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 31,
+                lineNumber: 28,
                 columnNumber: 9
             }, undefined),
             "Carousel"
@@ -65457,10 +65476,10 @@ export default  CarouselItem;*/ const CarouselItem = ({ imageId })=>{
         return null; // Skip rendering if imageId is undefined
     }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex",
+        className: "flex h-42 w-42 ",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
             src: baseURL + imageId,
-            className: "rounded-full w-40 h-40",
+            className: "rounded-full w-40 h-40 p-2",
             alt: "carousel-item"
         }, void 0, false, {
             fileName: "src/components/CarouselItem.js",
