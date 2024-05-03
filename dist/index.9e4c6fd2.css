@@ -257,6 +257,10 @@ img, video {
   margin-top: .75rem;
 }
 
+.mr-3 {
+  margin-right: .75rem;
+}
+
 .line-clamp-2 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -314,6 +318,10 @@ img, video {
   height: 4.5rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -344,6 +352,10 @@ img, video {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .shrink-0 {
@@ -499,6 +511,10 @@ img, video {
 
 .p-20 {
   padding: 5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
