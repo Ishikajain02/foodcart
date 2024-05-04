@@ -65372,15 +65372,24 @@ function _interopRequireWildcard(obj, nodeInterop) {
 const Carousel = ()=>{
     const [carousel, setcarousel] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
-        console.log("data");
+        // console.log("data");
         getitem();
     }, []);
+    const [num, setnum] = (0, _react.useState)(0);
+    function nextslide() {
+        if (carousel.length - 8 == num) return false;
+        setnum(num + 3);
+    }
+    function prevslide() {
+        if (num == 0) return false;
+        setnum(num - 3);
+    }
     async function getitem() {
         const data = await fetch(_constant.url);
         const data2 = await data.json();
         setcarousel(data2.data?.cards[0].card.card?.imageGridCards?.info);
     }
-    console.log(carousel);
+    // console.log(carousel);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: " flex  flex-col h-[15rem] w-[85rem]",
         children: [
@@ -65392,14 +65401,15 @@ const Carousel = ()=>{
                         children: "What's on your mind ?"
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 29,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex ",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "mr-3",
+                                className: "mr-3 cursor-pointer",
+                                onClick: prevslide,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactFontawesome.FontAwesomeIcon, {
                                     icon: _freeSolidSvgIcons.faCircleArrowLeft,
                                     style: {
@@ -65408,16 +65418,17 @@ const Carousel = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "src/components/Carousel.js",
-                                    lineNumber: 31,
-                                    columnNumber: 31
+                                    lineNumber: 40,
+                                    columnNumber: 66
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 31,
+                                lineNumber: 40,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "",
+                                className: "cursor-pointer",
+                                onClick: nextslide,
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactFontawesome.FontAwesomeIcon, {
                                     icon: _freeSolidSvgIcons.faCircleArrowRight,
                                     style: {
@@ -65426,64 +65437,67 @@ const Carousel = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "src/components/Carousel.js",
-                                    lineNumber: 35,
-                                    columnNumber: 27
+                                    lineNumber: 44,
+                                    columnNumber: 61
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 35,
+                                lineNumber: 44,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 30,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 28,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-row  flex-nowrap overflow-hidden overflow-x-scroll h-52 w-[85rem]",
+                className: "flex   h-52 w-[85rem] overflow-hidden",
                 children: [
                     carousel.map((item)=>{
                         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex-grow-1 shrink-0",
+                            className: " shrink-0 duration-500 ",
+                            style: {
+                                transform: `translateX(-${num * 100}%)`
+                            },
                             children: [
                                 " ",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {
                                     imageId: item.imageId
                                 }, item.id, false, {
                                     fileName: "src/components/Carousel.js",
-                                    lineNumber: 44,
-                                    columnNumber: 55
+                                    lineNumber: 55,
+                                    columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 44,
+                            lineNumber: 53,
                             columnNumber: 16
                         }, undefined);
                     }),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CarouselItem.default, {}, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 46,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 42,
+                lineNumber: 51,
                 columnNumber: 9
             }, undefined),
             "Carousel"
         ]
     }, void 0, true, {
         fileName: "src/components/Carousel.js",
-        lineNumber: 27,
+        lineNumber: 36,
         columnNumber: 10
     }, undefined);
 };
@@ -65527,10 +65541,7 @@ function _interopRequireDefault(obj) {
 )}
 export default  CarouselItem;*/ const CarouselItem = ({ imageId })=>{
     const baseURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-    if (!imageId) {
-        console.log("I am NULL");
-        return null; // Skip rendering if imageId is undefined
-    }
+    if (!imageId) return null; // Skip rendering if imageId is undefined
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex h-42 w-42 ",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -65539,12 +65550,12 @@ export default  CarouselItem;*/ const CarouselItem = ({ imageId })=>{
             alt: "carousel-item"
         }, void 0, false, {
             fileName: "src/components/CarouselItem.js",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/CarouselItem.js",
-        lineNumber: 29,
+        lineNumber: 28,
         columnNumber: 10
     }, undefined);
 };

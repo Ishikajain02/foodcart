@@ -13,7 +13,7 @@ import React from 'react';
 const CarouselItem = ({ imageId }) => {
     const baseURL = 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/';
     if (!imageId) {
-        console.log("I am NULL");
+        
         return null; // Skip rendering if imageId is undefined
     }
     return (

@@ -253,12 +253,12 @@ img, video {
   margin: .5rem;
 }
 
-.mt-3 {
-  margin-top: .75rem;
-}
-
 .mr-3 {
   margin-right: .75rem;
+}
+
+.mt-3 {
+  margin-top: .75rem;
 }
 
 .line-clamp-2 {
@@ -318,10 +318,6 @@ img, video {
   height: 4.5rem;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-32 {
   width: 8rem;
 }
@@ -332,10 +328,6 @@ img, video {
 
 .w-96 {
   width: 24rem;
-}
-
-.w-\[107rem\] {
-  width: 107rem;
 }
 
 .w-\[35rem\] {
@@ -354,10 +346,6 @@ img, video {
   width: 100%;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -366,6 +354,14 @@ img, video {
   --tw-border-spacing-x: 2.5rem;
   --tw-border-spacing-y: 2.5rem;
   border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row {
@@ -513,10 +509,6 @@ img, video {
   padding: 5rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-2 {
   padding-left: .5rem;
   padding-right: .5rem;
@@ -603,6 +595,10 @@ img, video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.duration-500 {
+  transition-duration: .5s;
 }
 
 .card {
