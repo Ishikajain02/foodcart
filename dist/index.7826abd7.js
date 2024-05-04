@@ -35461,6 +35461,8 @@ exports.default = void 0;
 var _reactRedux = require("cb87a23539be5893");
 var _FoodItem = _interopRequireDefault(require("4c19a214ef5555a3"));
 var _cartSlice = require("612d8c05571cb756");
+var _CartItem = _interopRequireDefault(require("f854cb619df5ca0c"));
+var _EmptyCart = _interopRequireDefault(require("3facb2a08b9b271b"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
         default: obj
@@ -35470,22 +35472,27 @@ const Cart = ()=>{
     const carditems = (0, _reactRedux.useSelector)((store)=>store.cart.items);
     // console.log(carditems);
     const dispatch = (0, _reactRedux.useDispatch)();
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    // carditems.length<=0? <EmptyCart/>:
+    return carditems.length <= 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_EmptyCart.default, {}, void 0, false, {
+        fileName: "src/components/Cart.js",
+        lineNumber: 18,
+        columnNumber: 34
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "text-3xl font-bold",
                 children: "Cart"
             }, void 0, false, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 16,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
-            carditems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_FoodItem.default, {
+            carditems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_CartItem.default, {
                     ...item.item.card.info,
                     ...item
                 }, item.item.card.info.id, false, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 17,
+                    lineNumber: 20,
                     columnNumber: 31
                 }, undefined)),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35494,7 +35501,7 @@ const Cart = ()=>{
                 children: "Clear Cart"
             }, void 0, false, {
                 fileName: "src/components/Cart.js",
-                lineNumber: 19,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined)
         ]
@@ -35512,7 +35519,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","cb87a23539be5893":"bdVon","4c19a214ef5555a3":"9xltm","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","612d8c05571cb756":"5RXlr"}],"9xltm":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","cb87a23539be5893":"bdVon","4c19a214ef5555a3":"9xltm","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","612d8c05571cb756":"5RXlr","f854cb619df5ca0c":"h762k","3facb2a08b9b271b":"g24Wj"}],"9xltm":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8f2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -64900,7 +64907,190 @@ var icons = {
     faLevelUpAlt: faLevelUpAlt
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8yaV8":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h762k":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$48cf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$48cf.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("3470d498107c4c4a"));
+var _cartSlice = require("aec11c666e3de0ed");
+var _reactFontawesome = require("57c909a10ce65945");
+var _freeSolidSvgIcons = require("6c7781966acecfda");
+var _reactRedux = require("40c9729664774e29");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const CartItem = ({ name, cuisines, areaName, imageId, price, description, item })=>{
+    const dispatch = (0, _reactRedux.useDispatch)();
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "card ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + imageId
+                }, void 0, false, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 25,
+                    columnNumber: 5
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: name
+                }, void 0, false, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 26,
+                    columnNumber: 6
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: cuisines
+                }, void 0, false, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 27,
+                    columnNumber: 6
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: areaName
+                }, void 0, false, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 28,
+                    columnNumber: 6
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: price / 100
+                }, void 0, false, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 30,
+                    columnNumber: 6
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "p-1 m-1 ",
+                            onClick: ()=>{
+                                dispatch((0, _cartSlice.addItem)({
+                                    item
+                                }));
+                            },
+                            children: [
+                                "  ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactFontawesome.FontAwesomeIcon, {
+                                    icon: _freeSolidSvgIcons.faPlus
+                                }, void 0, false, {
+                                    fileName: "src/components/CartItem.js",
+                                    lineNumber: 36,
+                                    columnNumber: 14
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CartItem.js",
+                            lineNumber: 32,
+                            columnNumber: 6
+                        }, undefined),
+                        "   ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: " p-1 m-1",
+                            onClick: ()=>{
+                                dispatch((0, _cartSlice.removeItem)());
+                            },
+                            children: [
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(_reactFontawesome.FontAwesomeIcon, {
+                                    icon: _freeSolidSvgIcons.faMinus
+                                }, void 0, false, {
+                                    fileName: "src/components/CartItem.js",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/CartItem.js",
+                            lineNumber: 36,
+                            columnNumber: 96
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/CartItem.js",
+                    lineNumber: 31,
+                    columnNumber: 6
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/CartItem.js",
+            lineNumber: 24,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/CartItem.js",
+        lineNumber: 23,
+        columnNumber: 10
+    }, undefined);
+};
+_c = CartItem;
+var _default = exports.default = CartItem;
+var _c;
+$RefreshReg$(_c, "CartItem");
+
+  $parcel$ReactRefreshHelpers$48cf.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","3470d498107c4c4a":"21dqq","aec11c666e3de0ed":"5RXlr","57c909a10ce65945":"clIT3","6c7781966acecfda":"5lkdy","40c9729664774e29":"bdVon","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g24Wj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4fcb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4fcb.prelude(module);
+
+try {
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireDefault(require("6de63b557ac83972"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const EmptyCart = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-gray-300 w-[95rem] h-[20rem] p-20 m-10"
+        }, void 0, false, {
+            fileName: "src/components/EmptyCart.js",
+            lineNumber: 11,
+            columnNumber: 6
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/EmptyCart.js",
+        lineNumber: 10,
+        columnNumber: 10
+    }, undefined);
+};
+_c = EmptyCart;
+var _default = exports.default = EmptyCart;
+var _c;
+$RefreshReg$(_c, "EmptyCart");
+
+  $parcel$ReactRefreshHelpers$4fcb.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","6de63b557ac83972":"21dqq","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
