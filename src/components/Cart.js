@@ -5,7 +5,7 @@ import CartItem from "./CartItem";
 import EmptyCart from "./EmptyCart";
 const Cart = () =>{
     const carditems = useSelector((store)=> store.cart.items);
-   // console.log(carditems);
+  // console.log(carditems);
    const dispatch=useDispatch();
   // carditems.length<=0? <EmptyCart/>:
     return ( carditems.length<=0)? <EmptyCart/>: (
